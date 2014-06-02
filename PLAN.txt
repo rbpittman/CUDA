@@ -1,0 +1,113 @@
+Randall Pittman
+Summer Scholars Research Plan
+-----------------------------
+
+1. Benchmarking  (5 weeks)
+==========================
+a. Week 1
+---------
+i. Complete the setup of the algorithm timers (Python: time.time() or
+timeit?)
+
+ii. Figure out how to deal with high CPU benchmark variance.
+
+iii. Determine whether to include any form of IO writing
+(i.e. to hard drive) when running the algorithm.
+Or we can have some hard drive access initially to load
+data into host memory, and simply start the timer after
+this is done. 
+
+iv. Determine how to run a benchmark (i.e. running a python program
+that makes a shell call to run a program that prints to stdout its
+execution time and append this to the end of a benchmark file(?)) 
+
+v. Begin writing Mandelbrot set algorithm. (Maybe only the C++
+sequential this week).
+
+b. Week 2
+---------
+i. Finish Mandelbrot CUDA algorithm.  
+
+ii. Finish Python and PyCuda algorithms. 
+
+iii. Extra day to finish algorithms if necessary. 
+
+iv. Construct benchmarking program and run benchmark.  
+
+v. Construct gnuplot graphs of results. 
+
+c. Week 3
+---------
+i. Determine parallel algorithm specification for matrix
+multiplication. 
+
+ii. Construct sequential implementations (super easy, get head start
+on day 3). 
+
+iii. Construct CUDA algorithm.
+
+iv. Construct PyCUDA algorithm. 
+
+v. Construct gnuplot graphs of results. (This might spill into week 4
+because of problems in solving the shared memory access problem for
+the various additions that take place between threads).  
+
+d. Week 4
+---------
+i. Determine parallel algorithm specification for N Queens problem.  
+
+ii. Construct sequential implementations.  
+
+iii. Construct CUDA algorithm.
+
+iv. Construct PyCUDA algorithm. 
+
+v. Construct gnuplot graphs of results.  (Again anticipating that this
+week will spill into week 5 because a parallel implementation of the N
+Queens problem is an interesting problem, and not too
+straightforward). 
+
+e. Week 5
+---------
+i. Finish up any spill over from above. 
+
+
+2. Study parallel algorithm complexity and write paper (3+ weeks)
+=================================================================
+a. Week 6
+---------
+i. Ask critical questions about the complexity class of the algorithms
+that were run. Are PyCuda and CUDA about the same runtime, or do they
+differ in a manner that is statistically significant? If the latter,
+then is it a difference by a constant ratio as N increases? Or does
+their runtime appear to differ by more than a linear increase? (I
+would think the former to be true, because the complexity should be
+the same if the algorithms were written the same way).
+
+ii. Can we determine ratios between the various curves that were
+generated from gnuplot? Can we determine complexity class from the
+curves? If so, what is the difference in complexity between the
+parallel and sequential implementations?  
+
+b. Week 7
+---------
+i. Based on the data, what about the benchmark programs analyzed makes
+them more or less suited to GPU computation? (i.e. Mandelbrot versus N
+queens). 
+
+ii. Can the independence of algorithms be classified? Algorithms can
+be given a Big-O complexity for run-time, so could a similar form of
+mathematics be applied to computational independence between the steps
+of any algorithm?
+
+c. Week 8
+---------
+i. Write research paper. (And the other paper?)
+
+Note: Whenever writing a benchmark algorithm for the 4 different
+program types, the order should be either [C++, CUDA, Python, PyCuda]
+or [C++, Python, CUDA, PyCUDA].  The first groups by language, while
+the second groups by sequential versus parallel implementation.
+
+Make progress on paper every week.
+Read those 2 books. 2 or 3 chapters a week.
