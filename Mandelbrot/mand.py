@@ -1,5 +1,7 @@
+#import time
+#t1 = time.time()
 from constants import *
-import time
+import sys
 
 #Pre: x is defined. 
 #Post: Converts x from an image array pixel index to 
@@ -58,25 +60,28 @@ def printASCIISet(image):
             row += 1
             col = 0
 
+#if __name__ == "__main__":
+if len(sys.argv) == 4:
+    WINDOW_WIDTH = int(sys.argv[1])
+    WINDOW_HEIGHT = int(sys.argv[2])
+    MAX_DEPTH = int(sys.argv[3])
+    VERT_SIZE = SIZE * (float(WINDOW_HEIGHT) / float(WINDOW_WIDTH))
+#Create a greyscale image:
+image = [0] * (WINDOW_HEIGHT * WINDOW_WIDTH)
+row = 0
+col = 0
+for i in range(WINDOW_WIDTH * WINDOW_HEIGHT):
+    image[i] = getPixelValue(col, row)
+    col += 1
+    if col == WINDOW_WIDTH:
+        row += 1
+        col = 0
+#TEMPORARY CHECK:
+#===
+#printASCIISet(image)
+#===
 
-if __name__ == "__main__":
-    t1 = time.time()
-    #Create a greyscale image:
-    image = [0] * (WINDOW_HEIGHT * WINDOW_WIDTH)
-    row = 0
-    col = 0
-    for i in range(WINDOW_WIDTH * WINDOW_HEIGHT):
-        image[i] = getPixelValue(col, row)
-        col += 1
-        if col == WINDOW_WIDTH:
-            row += 1
-            col = 0
-    #TEMPORARY CHECK:
-    #===
-    #printASCIISet(image)
-    #===
-    
-    #Compute time:
-    t2 = time.time()
-    duration = t2 - t1
-    print duration
+#Compute time:
+# t2 = time.time()
+# duration = t2 - t1
+# print duration

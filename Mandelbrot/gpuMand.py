@@ -1,10 +1,12 @@
 import pycuda.driver as cuda
 import pycuda.autoinit
 from pycuda.compiler import SourceModule
+import pycuda.compiler
 
 import numpy
 from constants import *
-import time
+#import time
+import sys
 
 module = SourceModule("""
 #include "/home/administrator/CUDA/Mandelbrot/constants.h"
@@ -13,8 +15,8 @@ module = SourceModule("""
 //Post: Converts x from an image array pixel index to 
 //      the real part of the complex graph location that the
 //      pixel represents. 
-inline __device__ float pixelXToComplexReal(uint x) {
-  return(((x / ((float) WINDOW_WIDTH)) * SIZE) + START_X - (SIZE / 2.f));
+inline __device__ float pixelXToComplexReal(uint x, int w) {
+  return(((x / ((float) w)) * SIZE) + START_X - (SIZE / 2.f));
 }
 
 //Pre: y is defined. 
@@ -22,38 +24,46 @@ inline __device__ float pixelXToComplexReal(uint x) {
 //      imaginary part of the complex graph location that the
 //      pixel represents. 
 //      NOTE: The y axis is inverted. (i.e. y = 0 is top of image)
-inline __device__ float pixelYToComplexImag(uint y) {
-  return((-(y/((float) WINDOW_HEIGHT)) * VERT_SIZE) + START_Y + (((float) VERT_SIZE) / 2));
+inline __device__ float pixelYToComplexImag(uint y, int h, float vert_size) {
+  return((-(y/((float) h)) * vert_size) + START_Y + (vert_size / 2.f));
 }
 
 //Pre: x and y are defined and are the matrix indices of an image.
+//     w, h are width and height of image.
+//     max_depth is the maximum recursive formula depth. 
+//     vert_size is the complex vertical size of the window.
 //Post: Computes the pixel value for the Mandelbrot set at 
 //      the given pixel.
-inline __device__ uchar getPixelValue(uint x, uint y) {
-  float real = pixelXToComplexReal(x);
-  float imag = pixelYToComplexImag(y);
+inline __device__ uchar getPixelValue(uint x, uint y, int w, int h, 
+				      int max_depth, float vert_size) {
+  float real = pixelXToComplexReal(x, w);
+  float imag = pixelYToComplexImag(y, h, vert_size);
   float init_real = real;
   float init_imag = imag;
   int i;
-  for(i = 0; i < MAX_DEPTH; i++) {
+  for(i = 0; i < max_depth; i++) {
     if(ABS(real, imag) > EXCEED_VALUE)
       break;
     real = MAND_REAL(real, imag, init_real);
     imag = MAND_IMAG(real, imag, init_imag);
   }
-  uchar value = (uchar) ((i / ((float)MAX_DEPTH)) * COLOR_MAX);
+  uchar value = (uchar) ((i / ((float)max_depth)) * COLOR_MAX);
   return(value);
 }
 
 //Pre: image is defined and has length lenImage. 
+//     w, h are width and height of image.
+//     max_depth is the maximum recursive formula depth. 
+//     vert_size is the complex vertical size of the window.
 //Post: Modifies the elements in image to be a grayscale Mandelbrot
 //      image. 
-__global__ void mand(uchar * image, int lenImage) {
+__global__ void mand(uchar * image, int lenImage, int w, int h, 
+		     int depth, float vert_size) {
   int i = threadIdx.x + (blockDim.x * blockIdx.x);
   if(i < lenImage) {
-    int x = i % WINDOW_WIDTH;
-    int y = i / WINDOW_WIDTH;
-    image[i] = getPixelValue(x, y);
+    int x = i % w;
+    int y = i / w;
+    image[i] = getPixelValue(x, y, w, h, depth, vert_size);
   }
 }
 """)
@@ -83,6 +93,11 @@ def printASCIISet(image):
 NUM_THREADS = 512
 
 if __name__ == "__main__":
+    if len(sys.argv) == 4:
+        WINDOW_WIDTH = int(sys.argv[1])
+        WINDOW_HEIGHT = int(sys.argv[2])
+        MAX_DEPTH = int(sys.argv[3])
+        VERT_SIZE = SIZE * (float(WINDOW_HEIGHT) / float(WINDOW_WIDTH))
     # Uncomment to get rid of timing the runtime initialization:
     # ===
     # int * dummy;
@@ -90,7 +105,7 @@ if __name__ == "__main__":
     # cudaFree(dummy);
     # ===
     # boost::posix_time::ptime t1(boost::posix_time::microsec_clock::local_time());
-    t1 = time.time()
+    # t1 = time.time()
     lenImage = WINDOW_HEIGHT * WINDOW_WIDTH
     # Create a greyscale image on HOST:
     image = numpy.zeros(lenImage, dtype=numpy.uint8)
@@ -98,17 +113,20 @@ if __name__ == "__main__":
     gpuImage = cuda.mem_alloc(image.nbytes)
     numBlocks = (lenImage // NUM_THREADS) + 1
     mand = module.get_function("mand")
-    mand(gpuImage, block=(NUM_THREADS,1,1), grid=(numBlocks, 1))
+    mand(gpuImage, numpy.int32(lenImage), numpy.int32(WINDOW_WIDTH), 
+         numpy.int32(WINDOW_HEIGHT), numpy.int32(MAX_DEPTH), 
+         numpy.float32(VERT_SIZE), 
+         block=(NUM_THREADS,1,1), grid=(numBlocks, 1))
     cuda.memcpy_dtoh(image, gpuImage)
     
     # TEMPORARY CHECK:
     # ===
-    printASCIISet(image)
+    # printASCIISet(image)
     # ===
     
     # Cleanup...
     # delete[] image
     # cudaFree(gpuImage)
     # compute time:
-    t2 = time.time()
-    print t2 - t1
+    # t2 = time.time()
+    # print t2 - t1

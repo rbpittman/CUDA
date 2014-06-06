@@ -1,12 +1,12 @@
 //The max number of iterations before stopping the recursive
 //Mandelbrot function:
-#define MAX_DEPTH 500
-#define WINDOW_WIDTH 50
-#define WINDOW_HEIGHT 50
+#define MAX_DEPTH 300
+#define WINDOW_WIDTH 300
+#define WINDOW_HEIGHT 300
 //DO NOT TOUCH ANY OF THE ABOVE LINES, constants.py READS THOSE VALUES. 
 //Horizontal size in the complex plane:
 #define SIZE ((float) 4)
-#define VERT_SIZE SIZE * (((float)WINDOW_HEIGHT) / ((float) WINDOW_WIDTH))
+//#define VERT_SIZE SIZE * (((float)WINDOW_HEIGHT) / ((float) WINDOW_WIDTH))
 #define START_X ((float)0)
 #define START_Y ((float)0)
 
@@ -27,3 +27,15 @@
 typedef unsigned char uchar;
 typedef unsigned int uint;
 
+namespace PARAMS {
+  int width = WINDOW_WIDTH;
+  int height = WINDOW_HEIGHT;
+  int max_depth = MAX_DEPTH;
+  float vert_size =  SIZE * (((float)WINDOW_HEIGHT) / ((float) WINDOW_WIDTH));
+  void setParams(int w, int h, int d) {
+    width = w;
+    height = h;
+    max_depth = d;
+    vert_size = SIZE * (((float)height) / ((float) width));
+  }
+}
