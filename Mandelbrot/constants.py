@@ -7,9 +7,9 @@ WINDOW_HEIGHT = int(f.readline().split(" ")[-1])
 f.close()
 
 #Horizontal size in the complex plane:
-SIZE = float(4)
+SIZE = float(1)
 VERT_SIZE = SIZE * (float(WINDOW_HEIGHT) / float(WINDOW_WIDTH))
-START_X = 0
+START_X = -1
 START_Y = 0
 
 COLOR_MAX = 255

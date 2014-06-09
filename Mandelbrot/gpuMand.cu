@@ -38,8 +38,9 @@ inline __device__ uchar getPixelValue(uint x, uint y, int w, int h,
   for(i = 0; i < max_depth; i++) {
     if(ABS(real, imag) > EXCEED_VALUE)
       break;
+    float oldReal = real;
     real = MAND_REAL(real, imag, init_real);
-    imag = MAND_IMAG(real, imag, init_imag);
+    imag = MAND_IMAG(oldReal, imag, init_imag);
   }
   uchar value = (uchar) ((i / ((float)max_depth)) * COLOR_MAX);
   return(value);
@@ -86,6 +87,31 @@ void printASCIISet(uchar * image) {
 //#define BLOCK_SIZE 16
 #define NUM_THREADS 512
 
+#include <fstream>
+
+void writeToFile(uchar * image, char * filename) {
+  ofstream out(filename);
+  out << "P6\n";
+  out << width << ' ' << height << endl;
+  out << "255" << endl;
+  // unsigned char curr;
+  // unsigned int count = 0;
+  for(int i = 0; i < width * height; i++) {
+    out << image[i] << image[i] << image[i];
+    // if(count == 0) {
+    //   curr = image[i];
+    //   count = 1;
+    // } else if(curr != image[i]) {
+    //   out << count << endl;
+    //   out << (int) curr << endl;
+    //   count = 0;
+    // } else {
+    //   ++count;
+    // }
+  }
+  // out << 0 << endl;
+}
+
 int main(int argc, char ** argv) {
   if(argc == 4) {
     setParams(atoi(argv[1]), atoi(argv[2]), atoi(argv[3]));
@@ -106,6 +132,7 @@ int main(int argc, char ** argv) {
   //define the number of blocks:
   int numBlocks = (lenImage / NUM_THREADS) + 1;
   //Activate kernel
+  // cerr << "blocks: " << numBlocks << endl;
   mand<<<numBlocks, NUM_THREADS>>> (gpuImage, lenImage, width, height,
 				    max_depth, vert_size);
   //Copy mand image back to host
@@ -115,6 +142,12 @@ int main(int argc, char ** argv) {
   //TEMPORARY CHECK:
   //===
   //printASCIISet(image);
+  //===
+  
+  //WRITE IMAGE:
+  //===
+  // cerr << "Saving...................." << endl;
+  // writeToFile(image, (char*) "mand.ppm");
   //===
   
   //Cleanup...

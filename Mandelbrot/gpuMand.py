@@ -44,8 +44,9 @@ inline __device__ uchar getPixelValue(uint x, uint y, int w, int h,
   for(i = 0; i < max_depth; i++) {
     if(ABS(real, imag) > EXCEED_VALUE)
       break;
+    float oldReal = real;
     real = MAND_REAL(real, imag, init_real);
-    imag = MAND_IMAG(real, imag, init_imag);
+    imag = MAND_IMAG(oldReal, imag, init_imag);
   }
   uchar value = (uchar) ((i / ((float)max_depth)) * COLOR_MAX);
   return(value);
@@ -121,7 +122,7 @@ if __name__ == "__main__":
     
     # TEMPORARY CHECK:
     # ===
-    # printASCIISet(image)
+    #printASCIISet(image)
     # ===
     
     # Cleanup...

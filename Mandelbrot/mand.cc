@@ -39,8 +39,9 @@ inline uchar getPixelValue(uint x, uint y) {
   for(i = 0; i < max_depth; i++) {
     if(ABS(real, imag) > EXCEED_VALUE)
       break;
-    real = MAND_REAL(real, imag, init_real);
-    imag = MAND_IMAG(real, imag, init_imag);
+    float oldReal = real;
+    real = MAND_REAL(real,    imag, init_real);
+    imag = MAND_IMAG(oldReal, imag, init_imag);
   }
   uchar value = (uchar) ((i / ((float)max_depth)) * COLOR_MAX);
   return(value);

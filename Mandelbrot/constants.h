@@ -5,9 +5,9 @@
 #define WINDOW_HEIGHT 300
 //DO NOT TOUCH ANY OF THE ABOVE LINES, constants.py READS THOSE VALUES. 
 //Horizontal size in the complex plane:
-#define SIZE ((float) 4)
+#define SIZE ((float) 1)
 //#define VERT_SIZE SIZE * (((float)WINDOW_HEIGHT) / ((float) WINDOW_WIDTH))
-#define START_X ((float)0)
+#define START_X ((float)-1)
 #define START_Y ((float)0)
 
 #define COLOR_MAX 255

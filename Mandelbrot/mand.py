@@ -18,7 +18,7 @@ def pixelXToComplexReal(x):
 #      NOTE: The y axis is inverted. (i.e. y = 0 is top of image)
 #      Returns a float. 
 def pixelYToComplexImag(y):
-    return (-(y / float(WINDOW_HEIGHT) * VERT_SIZE)) + START_Y + ((float(VERT_SIZE) / 2))
+    return (-((y / float(WINDOW_HEIGHT)) * VERT_SIZE)) + START_Y + ((float(VERT_SIZE) / 2))
 
 #Pre: x and y are defined and are the matrix indices of an image.
 #Post: Computes the pixel value for the Mandelbrot set at 
@@ -33,8 +33,9 @@ def getPixelValue(x, y):
         if ABS(real, imag) > EXCEED_VALUE:
             value = i
             break
+        oldReal = real
         real = MAND_REAL(real, imag, init_real)
-        imag = MAND_IMAG(real, imag, init_imag)
+        imag = MAND_IMAG(oldReal, imag, init_imag)
     else:
         value = MAX_DEPTH
     value = (i / float(MAX_DEPTH)) * COLOR_MAX
