@@ -1,0 +1,51 @@
+#Information relevant to writing the paper on the Mandelbrot set. 
+Wrote a low, medium, and high execution cost for computing 
+the stddev of times. For each level, run until stddev is stable. 
+
+P(|sampleMean - actualMean| >= E) <= (stddev^2) / (n*(E^2))
+
+Need E to be say about 0.01*sampleMean, so that it doesn't deviate by more 
+than 1%:
+E = 0.01 * sampleMean
+The probability that our sample mean DOES actually deviate by more than E needs
+to be less than 5%:
+0.05 = (stddev^2) / (n*(E^2))
+What value of n ensures this?
+Procedure:
+1: Run computation for different degrees of time. 
+2: Use the average of that data as the value for sampleMean.
+3: Compute value for E.
+3: Use the standard dev of that data as the value for stddev.
+4: Compute n.
+
+Based off the Python statistical data, it looks like it will be necessary to 
+run the python program once before actually collecting the data.
+
+Temp meeting notes:
+ Explicit vs normal field initialization?
+ Efficiency book?
+ n equation ok?
+ How many locations to execute computation at?
+ Weird second-to-last variance anomaly. 
+Solutions:
+ Compute the percentage of the mean distance 'E' so that we can use a specific
+  n value. 
+ 
+TODO:
+Convert to percentage accuracy using a given n value. 
+
+Graphics Card ID: GV-N84S-512I
+
+Learn Latex. 
+RUN PROBLEM!!!
+
+
+Meeting:
+Finding source for equation. 
+Don't worry about strange variance. 
+Figured out Python challenge gfx. 
+Converting game to android?
+Solutions:
+Do more searching for batch mode. 
+Put in a graph of all 4. Then put a graph of just the 3. 
+  Put 2 next to each other in the latex pdf. 
