@@ -108,6 +108,3 @@ Note: Whenever writing a benchmark algorithm for the 4 different
 program types, the order should be either [C++, CUDA, Python, PyCuda]
 or [C++, Python, CUDA, PyCUDA].  The first groups by language, while
 the second groups by sequential versus parallel implementation.
-
-Make progress on paper every week.
-Read those 2 books. 2 or 3 chapters a week.

@@ -98,7 +98,7 @@ if __name__ == "__main__":
         WINDOW_WIDTH = int(sys.argv[1])
         WINDOW_HEIGHT = int(sys.argv[2])
         MAX_DEPTH = int(sys.argv[3])
-        VERT_SIZE = SIZE * (float(WINDOW_HEIGHT) / float(WINDOW_WIDTH))
+        VERT_SIZE = SIZE * (float(WINDOW_HEIGHT)/WINDOW_WIDTH)
     # Uncomment to get rid of timing the runtime initialization:
     # ===
     # int * dummy;

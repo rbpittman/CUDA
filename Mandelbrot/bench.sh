@@ -2,19 +2,22 @@
 #-f option forces overwrite of whichever filename is 
 #    specified (if that file already exists). 
 #-o option takes 1 option, the filename to output the results to. 
-# Values for -n option, and what each selects:
+#-n option specifies the number of trials to run. default is 5.
+# Values for -s option, and what each selects:
 # 1) PyCPU
 # 2) C++CPU
 # 3) PyCUDA
 # 4) CUDA
 
-CPU_TRIALS=5
-CPU_IMAGE_START=100
-CPU_IMAGE_END=2000
-CPU_IMAGE_STEP=100
-CPU_IMAGE_DEPTH=500
+TRIALS=10
+IMAGE_START=5000
+IMAGE_END=5000
+IMAGE_STEP=200
+IMAGE_DEPTH=500
 
 SELECTION_REGEX='^[1-4]$';
+
+NUM_TRIALS_REGEX='^[0-9]+$';
 
 FORCE_OVERWRITE=false;
 FILE_WAS_SPECIFIED=false
@@ -22,18 +25,26 @@ FILE_WAS_SPECIFIED=false
 N=0;#Default to 0 to tell later selection code to prompt
     #for user selection.
 
-while getopts "fo:n:" opt; do
+while getopts "fo:s:n:" opt; do
     case $opt in
 	f)#Do not prompt to overwrite file
 	    FORCE_OVERWRITE=true;;
 	o)#Use this filename:
 	    FILENAME=$OPTARG;
 	    FILE_WAS_SPECIFIED=true;;
-	n)#Use this option for program selection, only if it is 1,2,3, or 4
+	s)#Use this option for program selection, only if it is 1,2,3, or 4
 	    if [[ $OPTARG =~ $SELECTION_REGEX ]]; then
 		N=$OPTARG;
 	    else
-		echo "Error: Option for -n must be an integer between 1 and 4.";
+		echo "Error: Option for -s must be an integer between 1 and 4.";
+		exit 1;
+	    fi
+	    ;;
+	n)#Used for number of trials.
+	    if [[ $OPTARG =~ $NUM_TRIALS_REGEX ]]; then
+		TRIALS=$OPTARG;
+	    else
+		echo "Error: Option for -n must be a non-negative integer.";
 		exit 1;
 	    fi
 	    ;;
@@ -93,15 +104,15 @@ fi
 #      relevant benchmark data to $FILENAME
 runBenchmark() {
     echo "Running benchmark, storing output in \"$FILENAME\".";
-    echo "Trials per format: $CPU_TRIALS" >> $FILENAME;
-    local CURR_IMAGE=$CPU_IMAGE_START
-    while [ $CURR_IMAGE -le $CPU_IMAGE_END ]; do
-	echo "${CURR_IMAGE} X ${CURR_IMAGE}, depth=$CPU_IMAGE_DEPTH" >> $FILENAME;
-	echo "${CURR_IMAGE} X ${CURR_IMAGE}, depth=$CPU_IMAGE_DEPTH";
+    echo "Trials per format: $TRIALS" >> $FILENAME;
+    local CURR_IMAGE=$IMAGE_START
+    while [ $CURR_IMAGE -le $IMAGE_END ]; do
+	echo "${CURR_IMAGE} X ${CURR_IMAGE}, depth=$IMAGE_DEPTH" >> $FILENAME;
+	echo "${CURR_IMAGE} X ${CURR_IMAGE}, depth=$IMAGE_DEPTH";
         #Do the individual trials:
-	for trial in `seq $CPU_TRIALS`; do
+	for trial in `seq $TRIALS`; do
 	    echo -n "Trial $trial: ";
-	    local PARAMS="$CURR_IMAGE $CURR_IMAGE $CPU_IMAGE_DEPTH";
+	    local PARAMS="$CURR_IMAGE $CURR_IMAGE $IMAGE_DEPTH";
 	    #COMMAND="$TIME_COMMAND $PROG $PARAMS";
 	    local COMMAND="$1 $PARAMS";
 	    echo "Command to run: $COMMAND";
@@ -111,13 +122,13 @@ runBenchmark() {
 #	    local TIME=${RESULT:8:5};#Extract the exact time
 	    echo -n "$TIME" >> $FILENAME;
 	    echo $TIME;
-	    if [ $trial = $CPU_TRIALS ]; then
+	    if [ $trial = $TRIALS ]; then
 		echo "" >> $FILENAME;
 	    else
 		echo -n " " >> $FILENAME;
 	    fi
 	done
-	let CURR_IMAGE+=CPU_IMAGE_STEP
+	let CURR_IMAGE+=IMAGE_STEP
     done
 }
 
@@ -131,7 +142,7 @@ elif [ $SELECTION = 2 ]; then #C++CPU
     runBenchmark "./mand"
 elif [ $SELECTION = 3 ]; then #PyCUDA
     echo "PyCUDA Benchmark" > $FILENAME;
-    runBenchmark "./python gpuMand.py"
+    runBenchmark "python gpuMand.py"
 elif [ $SELECTION = 4 ]; then #CUDA
     echo "CUDA Benchmark" > $FILENAME;
     runBenchmark "./gpuMand"

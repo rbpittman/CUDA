@@ -17,6 +17,8 @@ Procedure:
 3: Compute value for E.
 3: Use the standard dev of that data as the value for stddev.
 4: Compute n.
+nah lets not do that on second thought, just use confidence
+intervals to tell how much error there is.
 
 Based off the Python statistical data, it looks like it will be necessary to 
 run the python program once before actually collecting the data.
@@ -49,3 +51,14 @@ Solutions:
 Do more searching for batch mode. 
 Put in a graph of all 4. Then put a graph of just the 3. 
   Put 2 next to each other in the latex pdf. 
+
+
+Meeting:
+Set a different range of sizes to compare the 3 fast laguages. This
+would be an additional graph. 
+inkscape, convert svg pdf for latex. 
+
+
+Meeting:
+Problem with exporting to eps, as Scotty said. 
+Weird with the #input{thingy.....} when doing svg latex stuff.
