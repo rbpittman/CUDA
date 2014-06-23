@@ -63,6 +63,7 @@ i. Try python list copy instead of numpy.copy() to see if PyCUDA is then
 ii. Write sequential algorithms for CPU for the simulator. 
     Read Matrix Multiplication complexity paper. 
     Run Python sequential algorithms. 
+    Google around about that weird 8 block anomaly. 
 iii. Analyze different ratios between quadratic vs linear graphs in
      simulator vs Mandelbrot.
 iv. Continue writing paper, theory section. Try to explain rationale

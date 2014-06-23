@@ -1,0 +1,80 @@
+Meeting:
+Problem with latex pdf with the pictures. 
+How to do the random number generator. 
+Problem with generating it on the spot: 
+  Python would be super slow at that. 
+Made some ssh vs monitor tests. Insignificant. 
+
+Solutions:
+Change matplotlib font stuff?
+Change font size to larger!
+use python randint. 
+use my own random # generator. 
+
+
+Meeting:
+Should I include the O(2n) operation of freeing the matrix
+memory? (Maybe yes, because Python does it. 
+
+Solutions:
+Theory sets of the why behind what I'm doing. What I'm doing is in the
+methods section. 
+
+
+Meeting:
+Some form of constant time analysis for GPU memory techniques. 
+Found a cool paper. 
+
+Solutions:
+Classifications of algorithms, easy. medium, hard. 
+Do I want a computation that is a single answer, as opposed to
+multiple answers, where multiple answers would involve several frames
+of a simulation, for example.  
+Research this: Figuring the class of algorithms, or a class
+subdivision. classification of parallel algorithms. cited, and cited
+by for the gpu model paper.  
+
+Meeting:
+Limiting project to algorithms that have a
+"get-the-one-solution-for-this-input" structure. 
+
+Maybe we can take a look at the sequential implementation of an
+algorithm as the actual algorithm. Then we can look at the dependence
+of the algorithm. 
+
+Amdal's law?
+
+
+Solutions:
+advantage of parallelizing. 
+Look at other papers that guy with the parallel complexity thesis
+has written. 
+Figure out: Do I want one solution with the GPU, or try for the best
+implementation? 
+
+Thoughts:
+So I'm testing the relative performance of the languages
+themselves. In order to do that, I need to test the full capabilities
+of each language with respect to the device on which it is running. 
+OK: 
+The algorithm PSEUDOCODE should be the same with respect to each
+device. i.e., they both have the same complexity. However, if one
+language has a quirk over the other that makes it faster, then good
+for it. Also, the CUDA language, in order for accurate testing needs
+to be fully utilized. HOWEVER, the difference between CUDA and PyCUDA
+is in the CPU stuff, NOT the GPU stuff. 
+
+TODO:
+Write CUDA and PyCUDA with the lame matrix multiplication. 
+Write CUDA and PyCUDA with the fast matrix multiplication. 
+Verify that at different values of n:
+ (pycuda_slow - cuda_slow) == (pycuda_fast - cuda_fast)
+
+
+solution:
+1: Fix the CUDA PyCUDA simulation to run, store all results in a big
+array instead of immediately writing to a file. 
+2: Read the matrix mult paper. 
+3: Write up this thought process for different gpu implementation algorithms not
+mattering. 
+

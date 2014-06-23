@@ -24,3 +24,16 @@ gpuMandLarge: gpuMandLarge.o
 
 gpuMandLarge.o: gpuMandLarge.cu constants.h
 	nvcc -c gpuMandLarge.cu
+
+
+gpuMandSharedMem: gpuMandSharedMem.o
+	g++ gpuMandSharedMem.o -lcudart -o gpuMandSharedMem
+
+gpuMandSharedMem.o: gpuMandSharedMem.cu constants.h
+	nvcc -c gpuMandSharedMem.cu
+
+gpuMandSpeed: gpuMandSpeed.o
+	g++ gpuMandSpeed.o -lcudart -o gpuMandSpeed
+
+gpuMandSpeed.o: gpuMandSpeed.cu constants.h
+	nvcc -c gpuMandSpeed.cu
