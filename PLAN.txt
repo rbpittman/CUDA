@@ -54,7 +54,25 @@ the various additions that take place between threads).
 
 d. Week 4
 ---------
-i. Determine parallel algorithm specification for N Queens problem.  
+i. Try python list copy instead of numpy.copy() to see if PyCUDA is then 
+   significantly slower.
+   Convert Mandelbrot and Matrix Multiplication graphs to n based on
+   number of pixels and number of elements in Matrix.
+   Run the PyCUDA and CUDA gpu increase-in-number-of-frames graph on a
+   higher resolution (step size of 5). 
+ii. Write sequential algorithms for CPU for the simulator. 
+    Read Matrix Multiplication complexity paper. 
+    Run Python sequential algorithms. 
+iii. Analyze different ratios between quadratic vs linear graphs in
+     simulator vs Mandelbrot.
+iv. Continue writing paper, theory section. Try to explain rationale
+    behind gpu time analysis and structure of algorithms. 
+v. Finish all the problems that are going to come up. e.g. Theory on
+   the anomalous behavior in the GPU particle simulation graph. 
+
+
+--->OLDPLAN {
+i. Determine parallel algorithm specification for N Queens problem.
 
 ii. Construct sequential implementations.  
 
@@ -66,6 +84,7 @@ v. Construct gnuplot graphs of results.  (Again anticipating that this
 week will spill into week 5 because a parallel implementation of the N
 Queens problem is an interesting problem, and not too
 straightforward). 
+}
 
 e. Week 5
 ---------
