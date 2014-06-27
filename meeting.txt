@@ -1,0 +1,103 @@
+Meeting:
+---------
+
+I forgot to __syncthreads() before doing the write. Now the simulation doesn't 
+change randomly. 
+The weird data anomaly occurs when the number of blocks go past a multiple of 8. 
+When graphing the Mandelbrot set benchmarks it abbreviates the x axis to 1e7 factors. 
+  Is that ok? The other graph does a wierd thing with the zeros. And the fastest
+  3 graph on Python shoots off pretty fast. 
+
+TODO:
+Analyze what can be said about ratios between python and PyCUDA. 
+Write theory section. 
+Find more modern paper convention on the graph unit label. 
+
+
+Meeting:
+--------
+
+Wrote a Python program to compute the best fit line. So the ratio
+between the slow matrix multiplication and fast is 5.68. 
+Ran Python 12 hour bench on matrix multiplication. That's why I
+couldn't draw out those ratios yet. 
+Found paper that talks about step vs work complexity. 
+idea: To keep it simple, what if I analyze performance gain from a
+naive implementation of various algorithms, perhaps a classification
+based on an estimation of the expected number of read/write accesses
+on global memory. 
+
+PLAN:
+Find out more about step complexity vs work complexity. 
+Planning on writing a program that prints out the difference between
+python and pycuda, and c++ and cuda. 
+
+TODO:
+Difference between the model for gpu execution paper and the "idea"
+mentioned above. 
+Backup researchMachine. 
+
+
+Meeting:
+--------
+Found another good paper on parallel complexity and that step
+complexity vs work complexity. 
+REALLY weird stuff going on with the best-power-finder. 
+C++Long curve had 1.626 power. It's 1.553 when cut to normal times. 
+
+Diff from the other paper: They are trying more to develop a model
+ that allows one to write code to maximize performance by using various
+ memory types in the GPU. Mine is developing a way by which a serial
+ algorithm's performance boost from the conversion to naive GPU
+ parallel algorithm can be modeled simply from the structure of the
+ serial algorithm. 
+
+How to write a theory section without knowing what the main objective
+is?
+
+Am I doing the 8-queens problem next week?
+
+PLAN:
+
+Draw the graph for the simulator, where the gpu performance is slower
+than CPU. 
+Do something along the lines of the classification of the number of
+global read/writes required to complete a problem as a function of the
+input size. 
+
+TODO:
+Rewrite schedule for next week.
+Calculate total C++Long runtime
+google about the operating system setting the priority of the job. 
+Maybe set the priority to high. 
+
+
+Meeting:
+--------
+Global memory access complexities:
+Mandelbrot:  gn
+Matrix mult: g*(2n^1.5 + n)
+Simulator:   5fg*(n^2 + n), f = number of frames
+
+GPU Speed up ratios:
+Mandelbrot:  C++ / CUDA = 5.94510
+Matrix Mult: C++ / CUDA = 2.69069
+Simulator:   C++ / CUDA = 0.77348
+
+Let's assume that the CPU and GPU algorithm have in common the type of 
+arithmetic operations they must do (aside from a few thread index computation
+things). Then we can say that the GPU has:
+p = threads
+n = input size
+g = time to execute a global memory read/write
+
+Then the time it takes the CPU to execute a program is proportional to the 
+number of operations:
+t_cpu = (1 / cpu_flops) * f(n)
+where f(n) is a function that gives the number of operations required to solve
+the benchmark problem with an input of size n. Presumably, f(n) is the same for
+the CPU as for the GPU. 
+t_gpu = ((1 / gpu_flops) * f(n) / p) + h(n)g
+where gpu_flops is the number of flops that one thread of the gpu can
+perform, h(n) is a function of input size n that gives the number of
+global memory accesses performed. 

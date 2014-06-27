@@ -1,0 +1,50 @@
+alloc  pos: 2 * num_particles
+copy   pos: 2 * num_particles
+alloc  vel: 2 * num_particles
+memset vel: 2 * num_particles
+alloc  inBounds:num_particles
+memset inBounds:num_particles
+numFrames * -->
+ Per thread in n kernels:
+  inBounds: w * 1
+  inBounds: r * 1
+  
+  compute force:
+  --------------
+  positions: read * 2
+  inBounds inBounds: r * (n - 1)
+  vels: r * 2 * (n - 1)
+  vels: w * 2 * (n - 1)
+  -----------------
+  
+  positions: read  * 2
+  positions: write * 2
+  vels: read  * 2
+ copy pos: 2 * num_particles
+
+--------------------------------------------
+Determine equation
+--------------------------------------------
+
+n = number of particles
+f = number of frames
+g = time to read/write to global memory
+a = time to allocate space on device
+c = time to copy memory from device.
+s = time to set memory on device
+
+time =
+(n * (5a + 2c + 3s)) + f * (2nc + (n * (10g + ((n - 1) * 5g))))
+(n * (5a + 2c + 3s)) + f * (2nc + (n * (10g + (5gn - 5g)))
+(n * (5a + 2c + 3s)) + f * (2nc + (n * (10g + 5gn - 5g))
+(n * (5a + 2c + 3s)) + f * (2nc + (n * (5g + 5gn))
+(n * (5a + 2c + 3s)) + f * (2nc + (5gn + 5gnn))
+(n * (5a + 2c + 3s)) + f * (2nc + 5gn + 5gnn)
+(n * (5a + 2c + 3s)) + 2ncf + 5gnf + 5gnnf
+5an + 2cn + 3sn + 2ncf + 5gnf + 5gnnf
+(5an + 2cn + 3sn + 2ncf) + 5gnf + 5gnnf
+(5an + 2cn + 3sn + 2ncf) + g*(5nf + 5fn^2)
+-->
+(5an + 2cn + 3sn + 2ncf) + 5f * g(n + n^2)
+
+algorithm is O(n^2), from 5gnnf

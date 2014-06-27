@@ -1,0 +1,15 @@
+alloc numPixels
+numPixels {
+ image write * 1
+}
+copy numPixels
+
+n = number of pixels
+g = time to read/write to global memory
+a = time to allocate space on device
+c = time to copy memory to/from device.
+
+an + n * (g) + c
+an + gn + c
+
+algorithm complexity: O(n)

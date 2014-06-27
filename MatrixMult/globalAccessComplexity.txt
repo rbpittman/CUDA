@@ -1,0 +1,22 @@
+alloc num_elements
+copy  num_elements
+alloc num_elements
+num_elements * {
+  root(num_elements) * {
+    mat read * 2
+  }
+  result write
+}
+copy num_elements
+
+n = number of elements
+g = time to read/write to global memory
+a = time to allocate space on device
+c = time to copy memory to/from device.
+
+(2an + cn) + (n * ((sqrt(n) * 2g) + g))
+(2an + cn) + (n * ((2g*n^.5) + g))
+(2an + cn) + (2g*n^1.5 + gn)
+(2an + cn) + g*(2n^1.5 + n)
+
+algorithm complexity: O(n^1.5)

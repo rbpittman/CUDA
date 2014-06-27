@@ -1,0 +1,3598 @@
+"benchC++Long.txt" will be overwritten...
+Running benchmark, storing output in "benchC++Long.txt".
+32 X 32
+Trial 1: Command to run: ./mult 32
+0m0.005
+Trial 2: Command to run: ./mult 32
+0m0.005
+Trial 3: Command to run: ./mult 32
+0m0.005
+Trial 4: Command to run: ./mult 32
+0m0.005
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+96 X 96
+Trial 1: Command to run: ./mult 96
+0m0.022
+Trial 2: Command to run: ./mult 96
+0m0.023
+Trial 3: Command to run: ./mult 96
+0m0.024
+Trial 4: Command to run: ./mult 96
+0m0.024
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+160 X 160
+Trial 1: Command to run: ./mult 160
+0m0.044
+Trial 2: Command to run: ./mult 160
+0m0.039
+Trial 3: Command to run: ./mult 160
+0m0.048
+Trial 4: Command to run: ./mult 160
+0m0.048
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+224 X 224
+Trial 1: Command to run: ./mult 224
+0m0.097
+Trial 2: Command to run: ./mult 224
+0m0.104
+Trial 3: Command to run: ./mult 224
+0m0.098
+Trial 4: Command to run: ./mult 224
+0m0.097
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+288 X 288
+Trial 1: Command to run: ./mult 288
+0m0.199
+Trial 2: Command to run: ./mult 288
+0m0.204
+Trial 3: Command to run: ./mult 288
+0m0.202
+Trial 4: Command to run: ./mult 288
+0m0.196
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+352 X 352
+Trial 1: Command to run: ./mult 352
+0m0.416
+Trial 2: Command to run: ./mult 352
+0m0.378
+Trial 3: Command to run: ./mult 352
+0m0.400
+Trial 4: Command to run: ./mult 352
+0m0.391
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+416 X 416
+Trial 1: Command to run: ./mult 416
+0m0.773
+Trial 2: Command to run: ./mult 416
+0m0.747
+Trial 3: Command to run: ./mult 416
+0m0.771
+Trial 4: Command to run: ./mult 416
+0m0.771
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+480 X 480
+Trial 1: Command to run: ./mult 480
+0m1.227
+Trial 2: Command to run: ./mult 480
+0m1.226
+Trial 3: Command to run: ./mult 480
+0m1.231
+Trial 4: Command to run: ./mult 480
+0m1.228
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+544 X 544
+Trial 1: Command to run: ./mult 544
+0m1.804
+Trial 2: Command to run: ./mult 544
+0m1.810
+Trial 3: Command to run: ./mult 544
+0m1.798
+Trial 4: Command to run: ./mult 544
+0m1.803
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+608 X 608
+Trial 1: Command to run: ./mult 608
+0m2.534
+Trial 2: Command to run: ./mult 608
+0m2.524
+Trial 3: Command to run: ./mult 608
+0m2.541
+Trial 4: Command to run: ./mult 608
+0m2.540
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+672 X 672
+Trial 1: Command to run: ./mult 672
+0m3.419
+Trial 2: Command to run: ./mult 672
+0m3.446
+Trial 3: Command to run: ./mult 672
+0m3.428
+Trial 4: Command to run: ./mult 672
+0m3.433
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+736 X 736
+Trial 1: Command to run: ./mult 736
+0m4.615
+Trial 2: Command to run: ./mult 736
+0m4.654
+Trial 3: Command to run: ./mult 736
+0m4.633
+Trial 4: Command to run: ./mult 736
+0m4.650
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+800 X 800
+Trial 1: Command to run: ./mult 800
+0m6.434
+Trial 2: Command to run: ./mult 800
+0m6.428
+Trial 3: Command to run: ./mult 800
+0m6.428
+Trial 4: Command to run: ./mult 800
+0m6.435
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+864 X 864
+Trial 1: Command to run: ./mult 864
+0m8.429
+Trial 2: Command to run: ./mult 864
+0m8.441
+Trial 3: Command to run: ./mult 864
+0m8.456
+Trial 4: Command to run: ./mult 864
+0m8.430
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+928 X 928
+Trial 1: Command to run: ./mult 928
+0m11.074
+Trial 2: Command to run: ./mult 928
+0m11.062
+Trial 3: Command to run: ./mult 928
+0m11.065
+Trial 4: Command to run: ./mult 928
+0m11.042
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+992 X 992
+Trial 1: Command to run: ./mult 992
+0m14.449
+Trial 2: Command to run: ./mult 992
+0m14.462
+Trial 3: Command to run: ./mult 992
+0m14.461
+Trial 4: Command to run: ./mult 992
+0m14.506
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1056 X 1056
+Trial 1: Command to run: ./mult 1056
+0m17.864
+Trial 2: Command to run: ./mult 1056
+0m17.851
+Trial 3: Command to run: ./mult 1056
+0m17.921
+Trial 4: Command to run: ./mult 1056
+0m17.903
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1120 X 1120
+Trial 1: Command to run: ./mult 1120
+0m21.354
+Trial 2: Command to run: ./mult 1120
+0m21.368
+Trial 3: Command to run: ./mult 1120
+0m21.360
+Trial 4: Command to run: ./mult 1120
+0m21.380
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1184 X 1184
+Trial 1: Command to run: ./mult 1184
+0m25.323
+Trial 2: Command to run: ./mult 1184
+0m25.299
+Trial 3: Command to run: ./mult 1184
+0m25.337
+Trial 4: Command to run: ./mult 1184
+0m25.334
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1248 X 1248
+Trial 1: Command to run: ./mult 1248
+0m29.984
+Trial 2: Command to run: ./mult 1248
+0m29.932
+Trial 3: Command to run: ./mult 1248
+0m30.044
+Trial 4: Command to run: ./mult 1248
+0m29.990
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1312 X 1312
+Trial 1: Command to run: ./mult 1312
+0m35.048
+Trial 2: Command to run: ./mult 1312
+0m34.973
+Trial 3: Command to run: ./mult 1312
+0m35.191
+Trial 4: Command to run: ./mult 1312
+0m35.189
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1376 X 1376
+Trial 1: Command to run: ./mult 1376
+0m40.693
+Trial 2: Command to run: ./mult 1376
+0m40.630
+Trial 3: Command to run: ./mult 1376
+0m40.664
+Trial 4: Command to run: ./mult 1376
+0m40.627
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1440 X 1440
+Trial 1: Command to run: ./mult 1440
+0m46.981
+Trial 2: Command to run: ./mult 1440
+0m46.938
+Trial 3: Command to run: ./mult 1440
+0m47.081
+Trial 4: Command to run: ./mult 1440
+0m46.892
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1504 X 1504
+Trial 1: Command to run: ./mult 1504
+0m53.468
+Trial 2: Command to run: ./mult 1504
+0m53.318
+Trial 3: Command to run: ./mult 1504
+0m53.347
+Trial 4: Command to run: ./mult 1504
+0m53.449
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1568 X 1568
+Trial 1: Command to run: ./mult 1568
+1m1.226
+Trial 2: Command to run: ./mult 1568
+1m1.285
+Trial 3: Command to run: ./mult 1568
+1m1.169
+Trial 4: Command to run: ./mult 1568
+1m1.085
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1632 X 1632
+Trial 1: Command to run: ./mult 1632
+1m8.575
+Trial 2: Command to run: ./mult 1632
+1m8.489
+Trial 3: Command to run: ./mult 1632
+1m8.715
+Trial 4: Command to run: ./mult 1632
+1m8.491
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1696 X 1696
+Trial 1: Command to run: ./mult 1696
+1m18.189
+Trial 2: Command to run: ./mult 1696
+1m18.328
+Trial 3: Command to run: ./mult 1696
+1m17.938
+Trial 4: Command to run: ./mult 1696
+1m18.279
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1760 X 1760
+Trial 1: Command to run: ./mult 1760
+1m27.416
+Trial 2: Command to run: ./mult 1760
+1m27.137
+Trial 3: Command to run: ./mult 1760
+1m27.112
+Trial 4: Command to run: ./mult 1760
+1m27.155
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1824 X 1824
+Trial 1: Command to run: ./mult 1824
+1m36.351
+Trial 2: Command to run: ./mult 1824
+1m37.102
+Trial 3: Command to run: ./mult 1824
+1m36.640
+Trial 4: Command to run: ./mult 1824
+1m36.722
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1888 X 1888
+Trial 1: Command to run: ./mult 1888
+1m48.588
+Trial 2: Command to run: ./mult 1888
+1m48.369
+Trial 3: Command to run: ./mult 1888
+1m48.784
+Trial 4: Command to run: ./mult 1888
+1m48.587
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+1952 X 1952
+Trial 1: Command to run: ./mult 1952
+2m1.240
+Trial 2: Command to run: ./mult 1952
+2m0.942
+Trial 3: Command to run: ./mult 1952
+2m0.653
+Trial 4: Command to run: ./mult 1952
+2m0.763
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2016 X 2016
+Trial 1: Command to run: ./mult 2016
+2m13.600
+Trial 2: Command to run: ./mult 2016
+2m13.483
+Trial 3: Command to run: ./mult 2016
+2m13.426
+Trial 4: Command to run: ./mult 2016
+2m13.242
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2080 X 2080
+Trial 1: Command to run: ./mult 2080
+2m27.490
+Trial 2: Command to run: ./mult 2080
+2m27.064
+Trial 3: Command to run: ./mult 2080
+2m27.364
+Trial 4: Command to run: ./mult 2080
+2m25.882
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2144 X 2144
+Trial 1: Command to run: ./mult 2144
+2m40.747
+Trial 2: Command to run: ./mult 2144
+2m41.646
+Trial 3: Command to run: ./mult 2144
+2m40.331
+Trial 4: Command to run: ./mult 2144
+2m41.316
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2208 X 2208
+Trial 1: Command to run: ./mult 2208
+2m56.421
+Trial 2: Command to run: ./mult 2208
+2m56.410
+Trial 3: Command to run: ./mult 2208
+2m56.164
+Trial 4: Command to run: ./mult 2208
+2m56.186
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2272 X 2272
+Trial 1: Command to run: ./mult 2272
+3m13.022
+Trial 2: Command to run: ./mult 2272
+3m12.809
+Trial 3: Command to run: ./mult 2272
+3m12.957
+Trial 4: Command to run: ./mult 2272
+3m12.304
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2336 X 2336
+Trial 1: Command to run: ./mult 2336
+3m27.416
+Trial 2: Command to run: ./mult 2336
+3m27.525
+Trial 3: Command to run: ./mult 2336
+3m27.126
+Trial 4: Command to run: ./mult 2336
+3m26.816
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2400 X 2400
+Trial 1: Command to run: ./mult 2400
+3m48.193
+Trial 2: Command to run: ./mult 2400
+3m48.867
+Trial 3: Command to run: ./mult 2400
+3m48.407
+Trial 4: Command to run: ./mult 2400
+3m47.327
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2464 X 2464
+Trial 1: Command to run: ./mult 2464
+4m7.835
+Trial 2: Command to run: ./mult 2464
+4m7.928
+Trial 3: Command to run: ./mult 2464
+4m6.848
+Trial 4: Command to run: ./mult 2464
+4m8.487
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2528 X 2528
+Trial 1: Command to run: ./mult 2528
+4m27.232
+Trial 2: Command to run: ./mult 2528
+4m28.437
+Trial 3: Command to run: ./mult 2528
+4m27.361
+Trial 4: Command to run: ./mult 2528
+4m32.131
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2592 X 2592
+Trial 1: Command to run: ./mult 2592
+4m50.842
+Trial 2: Command to run: ./mult 2592
+4m49.232
+Trial 3: Command to run: ./mult 2592
+4m52.113
+Trial 4: Command to run: ./mult 2592
+4m52.200
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2656 X 2656
+Trial 1: Command to run: ./mult 2656
+5m12.884
+Trial 2: Command to run: ./mult 2656
+5m14.596
+Trial 3: Command to run: ./mult 2656
+5m12.993
+Trial 4: Command to run: ./mult 2656
+5m13.154
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2720 X 2720
+Trial 1: Command to run: ./mult 2720
+5m37.034
+Trial 2: Command to run: ./mult 2720
+5m37.932
+Trial 3: Command to run: ./mult 2720
+5m34.495
+Trial 4: Command to run: ./mult 2720
+5m40.658
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2784 X 2784
+Trial 1: Command to run: ./mult 2784
+6m2.532
+Trial 2: Command to run: ./mult 2784
+6m4.063
+Trial 3: Command to run: ./mult 2784
+6m6.561
+Trial 4: Command to run: ./mult 2784
+6m4.102
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2848 X 2848
+Trial 1: Command to run: ./mult 2848
+6m29.432
+Trial 2: Command to run: ./mult 2848
+6m27.555
+Trial 3: Command to run: ./mult 2848
+6m26.452
+Trial 4: Command to run: ./mult 2848
+6m29.398
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2912 X 2912
+Trial 1: Command to run: ./mult 2912
+7m1.212
+Trial 2: Command to run: ./mult 2912
+6m59.107
+Trial 3: Command to run: ./mult 2912
+7m0.372
+Trial 4: Command to run: ./mult 2912
+7m0.708
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+2976 X 2976
+Trial 1: Command to run: ./mult 2976
+7m27.774
+Trial 2: Command to run: ./mult 2976
+7m26.152
+Trial 3: Command to run: ./mult 2976
+7m27.099
+Trial 4: Command to run: ./mult 2976
+7m57.448
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+3040 X 3040
+Trial 1: Command to run: ./mult 3040
+8m5.873
+Trial 2: Command to run: ./mult 3040
+8m11.093
+Trial 3: Command to run: ./mult 3040
+8m1.820
+Trial 4: Command to run: ./mult 3040
+8m2.470
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+3104 X 3104
+Trial 1: Command to run: ./mult 3104
+8m43.333
+Trial 2: Command to run: ./mult 3104
+8m37.731
+Trial 3: Command to run: ./mult 3104
+8m39.450
+Trial 4: Command to run: ./mult 3104
+8m38.371
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+3168 X 3168
+Trial 1: Command to run: ./mult 3168
+9m8.269
+Trial 2: Command to run: ./mult 3168
+9m16.895
+Trial 3: Command to run: ./mult 3168
+9m13.407
+Trial 4: Command to run: ./mult 3168
+9m19.476
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+3232 X 3232
+Trial 1: Command to run: ./mult 3232
+10m10.416
+Trial 2: Command to run: ./mult 3232
+9m48.806
+Trial 3: Command to run: ./mult 3232
+10m6.805
+Trial 4: Command to run: ./mult 3232
+9m59.628
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+3296 X 3296
+Trial 1: Command to run: ./mult 3296
+10m49.787
+Trial 2: Command to run: ./mult 3296
+10m45.393
+Trial 3: Command to run: ./mult 3296
+10m35.179
+Trial 4: Command to run: ./mult 3296
+10m39.815
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+3360 X 3360
+Trial 1: Command to run: ./mult 3360
+11m38.757
+Trial 2: Command to run: ./mult 3360
+11m45.743
+Trial 3: Command to run: ./mult 3360
+11m16.362
+Trial 4: Command to run: ./mult 3360
+11m15.877
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+3424 X 3424
+Trial 1: Command to run: ./mult 3424
+12m10.819
+Trial 2: Command to run: ./mult 3424
+12m3.318
+Trial 3: Command to run: ./mult 3424
+12m12.623
+Trial 4: Command to run: ./mult 3424
+12m19.832
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+3488 X 3488
+Trial 1: Command to run: ./mult 3488
+12m50.545
+Trial 2: Command to run: ./mult 3488
+13m5.613
+Trial 3: Command to run: ./mult 3488
+12m53.084
+Trial 4: Command to run: ./mult 3488
+12m45.348
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+3552 X 3552
+Trial 1: Command to run: ./mult 3552
+13m56.535
+Trial 2: Command to run: ./mult 3552
+13m35.227
+Trial 3: Command to run: ./mult 3552
+14m9.405
+Trial 4: Command to run: ./mult 3552
+13m37.074
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+3616 X 3616
+Trial 1: Command to run: ./mult 3616
+14m37.781
+Trial 2: Command to run: ./mult 3616
+14m39.959
+Trial 3: Command to run: ./mult 3616
+14m30.668
+Trial 4: Command to run: ./mult 3616
+14m30.358
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
+3680 X 3680
+Trial 1: Command to run: ./mult 3680
+15m24.478
+Trial 2: Command to run: ./mult 3680
+15m8.179
+Trial 3: Command to run: ./mult 3680
+15m14.008
+Trial 4: Command to run: ./mult 3680
+15m40.627
+# dmidecode 2.11
+SMBIOS 2.5 present.
+
+Handle 0x0004, DMI type 4, 40 bytes
+Processor Information
+	Socket Designation: CPUSocket
+	Type: Central Processor
+	Family: Athlon II
+	Manufacturer: AMD              
+	ID: 53 0F 10 00 FF FB 8B 17
+	Signature: Family 16, Model 5, Stepping 3
+	Flags:
+		FPU (Floating-point unit on-chip)
+		VME (Virtual mode extension)
+		DE (Debugging extension)
+		PSE (Page size extension)
+		TSC (Time stamp counter)
+		MSR (Model specific registers)
+		PAE (Physical address extension)
+		MCE (Machine check exception)
+		CX8 (CMPXCHG8 instruction supported)
+		APIC (On-chip APIC hardware supported)
+		SEP (Fast system call)
+		MTRR (Memory type range registers)
+		PGE (Page global enable)
+		MCA (Machine check architecture)
+		CMOV (Conditional move instruction supported)
+		PAT (Page attribute table)
+		PSE-36 (36-bit page size extension)
+		CLFSH (CLFLUSH instruction supported)
+		MMX (MMX technology supported)
+		FXSR (FXSAVE and FXSTOR instructions supported)
+		SSE (Streaming SIMD extensions)
+		SSE2 (Streaming SIMD extensions 2)
+		HTT (Multi-threading)
+	Version: AMD Athlon(tm) II X3 445 Processor                  
+	Voltage: 1.5 V
+	External Clock: 200 MHz
+	Max Speed: 3100 MHz
+	Current Speed: 3100 MHz
+	Status: Populated, Enabled
+	Upgrade: Socket 940
+	L1 Cache Handle: 0x0005
+	L2 Cache Handle: 0x0006
+	L3 Cache Handle: Not Provided
+	Serial Number: To Be Filled By O.E.M.
+	Asset Tag: To Be Filled By O.E.M.
+	Part Number: To Be Filled By O.E.M.
+	Core Count: 3
+	Core Enabled: 3
+	Characteristics:
+		64-bit capable
+
