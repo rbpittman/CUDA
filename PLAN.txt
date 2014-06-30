@@ -89,7 +89,33 @@ straightforward).
 
 e. Week 5
 ---------
+1. Look into how other research has developed parallel compuation models
+   for performance. Continue working on model. 
+
+2. Depending on how the model comes along, either continue
+   researching other models that have been developed or test accuracy
+   with the data that has been collected. 
+
+3. Continue testing with the model. How can we tell if a model
+   accurately describes the behavior of the GPU?
+
+4. Is the model generalizable to any serial algorithm?
+   The model is designed to take a serial algorithm performance
+   equation and convert it to the performance of the corresponding
+   naive parallel algorithm. What are the conditions behind the given 
+   serial algorithm in terms of its parallelizability (a.k.a the
+   process of parallelizification, or the quality of
+   parallelalispicacity). 
+
+5. Is there an exact threshold at which a specific type of serial
+   algorithm, by using the model, will produce the exact same
+   performance on the CPU as on the GPU? Is it possible to come up
+   with a mathematical problem that has that property? (i.e. its
+   problemathematicalizificationability? An important question.)
+
+--->OLDPAN {
 i. Finish up any spill over from above. 
+}
 
 
 2. Study parallel algorithm complexity and write paper (3+ weeks)
