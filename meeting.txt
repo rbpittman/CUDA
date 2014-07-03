@@ -94,10 +94,120 @@ g = time to execute a global memory read/write
 Then the time it takes the CPU to execute a program is proportional to the 
 number of operations:
 t_cpu = (1 / cpu_flops) * f(n)
-where f(n) is a function that gives the number of operations required to solve
-the benchmark problem with an input of size n. Presumably, f(n) is the same for
-the CPU as for the GPU. 
+where f(n) is a function that gives the number of operations required
+to solve the benchmark problem with an input of size n. Presumably,
+f(n) is the same for the CPU as for the GPU. 
 t_gpu = ((1 / gpu_flops) * f(n) / p) + h(n)g
 where gpu_flops is the number of flops that one thread of the gpu can
 perform, h(n) is a function of input size n that gives the number of
 global memory accesses performed. 
+
+One problem is the values of cpu_flops and gpu_flops. We can find c for:
+c = cpu_flops / gpu_flops
+
+
+
+Meeting:
+--------
+Running benchmark, will see in the morning whether the graph is better. 
+
+Try 1:
+------
+
+time_gpu(n) = g * h(n) + (c(n) / p)
+h(n) is the number of global memory read/writes. 
+c(n) is some function of n that gives the time spent on other
+numerical calculations. 
+p is number of threads. 
+This formula only applies for larger values of p. 
+
+time_cpu(n) = x * c(n)
+where x is a factor presumably such that x < 1 which means that the
+cpu can execute faster than the gpu in terms of general calculations. 
+
+Mandelbrot:
+h(n) = n
+p = min(768, n)
+time_gpu(n) = gn + (c(n) / min(768, n))
+
+Try 2:
+------
+p = number of threads
+time_gpu(n) = c * (time_cpu(n) / p) + g * h(n)
+
+Mandelbrot:
+p = min(768, n)
+time_gpu(n) = c * (time_cpu(n) / min(768, n)) + gn
+Assume a decent number of pixels (larger than 27X27). 
+time_gpu(n) = c * (time_cpu(n) / 768) + gn + init_time
+
+--->
+The power analysis on the "mean" python turned up the same power. 
+--->
+
+--->
+Got some weird behavior with the GPU. 
+--->
+
+
+Plan:
+-----
+Try to find some paper that talks about mathematical models for
+parallel computation. Find some equations. 
+
+
+TODO:
+-----
+
+Use an ax^2 + bx + c. bx is the matrix multiplication generation. 
+Keep working on testing global memory access. 
+Find papers on modeling gpu performance execution. 
+
+
+Meeting:
+--------
+
+Trying to determine the operations relating to global memory that
+have n as a factor in the time equation for that operation. 
+Figured out how to test the global diff performance. 
+Crazy nvcc compiler optimizations:
+This runs in O(steps) time:
+for(int i = 0; i < steps; i++) {
+  c += i;
+}
+
+This runs in constant time, still producing the correct result:
+for(int i = 0; i < steps; i++) {
+  c++;
+}
+
+Tried to figure out the equation for the 1.73 curve. No such luck. 
+
+
+TODO:
+-----
+Figure out the equation for the memcpy function based on size. 
+Using max memcpy size performed, figure out greatest time effect. 
+
+
+
+Meeting:
+--------
+Equation for GPU 1.79931515731e-05 * x^1.0 + 0.142268967261
+
+malloc testing did NOT go well at all! It does weird suballocation 
+things that affect the run-time performance. 
+Actually, methinks i got it for the worst case. 
+Time to allocate and free 10000 times for various sizes has now been measured. 
+If I don't free, it keeps using more and more memory. 
+It does something weird where if I send in a value that is far to big, 
+
+
+TODO:
+-----
+Test cudaMemset and get its complexity. 
+Recreate model in more detail including all the types of global memory access. 
+
+PLAN:
+-----
+Brief look at what particles simulations do for initial velocity. 

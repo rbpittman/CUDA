@@ -1,0 +1,14 @@
+cudaMemcpy:
+-----------
+Equation for time to execute global memcpy based on the size of the array:
+(1.79931515731e-05 * x + 0.142268967261) / (100000 * sizeof(int))
+x is the number of bytes being copied. 
+in python: f = lambda x:(1.79931515731e-05 * x + 0.142268967261) / (100000 * 4)
+
+cudaMalloc:
+-----------
+Equation for time to execute global memory allocation based on size of array:
+(1.16500018521e-07 * x + 1.61315917969) / (10000 * sizeof(int))
+
+cudaMemset:
+-----------
