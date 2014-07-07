@@ -1,0 +1,105 @@
+Attempt 1:
+----------
+
+Global memory access complexities:
+Mandelbrot:  gn
+Matrix mult: g*(2n^1.5 + n)
+Simulator:   5fg*(n^2 + n), f = number of frames
+
+GPU Speed up ratios:
+Mandelbrot:  C++ / CUDA = 5.94510
+Matrix Mult: C++ / CUDA = 2.69069
+Simulator:   C++ / CUDA = 0.77348
+
+Let's assume that the CPU and GPU algorithm have in common the type of 
+arithmetic operations they must do (aside from a few thread index computation
+things). Then we can say that the GPU has:
+p = threads
+n = input size
+g = time to execute a global memory read/write
+
+Then the time it takes the CPU to execute a program is proportional to the 
+number of operations:
+t_cpu = (1 / cpu_flops) * f(n)
+where f(n) is a function that gives the number of operations required
+to solve the benchmark problem with an input of size n. Presumably,
+f(n) is the same for the CPU as for the GPU. 
+t_gpu = ((1 / gpu_flops) * f(n) / p) + h(n)g
+where gpu_flops is the number of flops that one thread of the gpu can
+perform, h(n) is a function of input size n that gives the number of
+global memory accesses performed. 
+
+One problem is the values of cpu_flops and gpu_flops. We can find c for:
+c = cpu_flops / gpu_flops
+
+
+Attempt 2:
+----------
+
+time_gpu(n) = g * h(n) + (c(n) / p)
+h(n) is the number of global memory read/writes. 
+c(n) is some function of n that gives the time spent on other
+numerical calculations. 
+p is number of threads. 
+This formula only applies for larger values of p. 
+
+time_cpu(n) = x * c(n)
+where x is a factor presumably such that x < 1 which means that the
+cpu can execute faster than the gpu in terms of general calculations. 
+
+Mandelbrot:
+h(n) = n
+p = min(768, n)
+time_gpu(n) = gn + (c(n) / min(768, n))
+
+Attempt 3:
+----------
+
+p = number of threads
+time_gpu(n) = c * (time_cpu(n) / p) + g * h(n)
+
+Mandelbrot:
+p = min(768, n)
+time_gpu(n) = c * (time_cpu(n) / min(768, n)) + gn
+Assume a decent number of pixels (larger than 27X27). 
+time_gpu(n) = c * (time_cpu(n) / 768) + gn + init_time
+
+
+Attempt 4: Make 3 more specific
+--------------------------------
+
+Actual equations for the following global memory operations:
+time_malloc(x) = 2.91250e-12 * x + 4.03289e-05
+time_memcpy(x) = 4.49828e-11 * x + 3.55672e-07
+time_memset(x) = 3.57225e-10 * x + 3.56058e-06
+time_global_read(x) = 4.3311043e-07 * x
+time_global_write(x) = 5.090328e-08 * x
+
+New model:
+time_gpu(n) = r * (time_gpu / num_threads) + (malloc_a * a + malloc_c) + (memcpy_a * b + memcpy_c) + (memset_a * c + memset_c) + global_read_time * d + global_write_time * e
+
+
+Ratio between GPU and CPU thread performance: 29.95715289151847
+r = 29.95715289151847
+
+For my gpu:
+(2.91250e-12 * a + 4.03289e-05) + (4.49828e-11 * b + 3.55672e-07) + (3.57225e-10 * c + 3.56058e-06) + 4.3311043e-07 * d + 5.090328e-08 * e
+a: number of mallocs
+
+init_time is usually between 0 and 0.5. This is the constant 
+time library initialization and setup stuff. 
+
+Compelete model:
+r * (time_cpu(n) / num_threads) where n is the input size, and r is the ratio between gpu and cpu thread speed + 
+sum(time_malloc(ai) where ai is each number of bytes to be processed) +
+sum(time_memcpy(bi) where bi is each number of bytes to be processed) +
+sum(time_memset(ci) where ci is each number of bytes to be processed) +
+time_global_read(d) where d is the number of global reads + 
+time_global_write(e) where e is the number of global writes +
+init_time
+
+The idea behind the model:
+The GPU is the same execution as the CPU except for 3 things:
+1: GPU can do multiple things at the same time.
+2: Each of the multiple things it can do is slower than the one thing the CPU can do. 
+3: It has global memory access problems that severely affect program performance. 

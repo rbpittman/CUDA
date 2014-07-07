@@ -118,10 +118,38 @@ i. Finish up any spill over from above.
 }
 
 
-2. Study parallel algorithm complexity and write paper (3+ weeks)
+2. Create model for GPU performance in terms of global memory
+   accesses. Finish papers. 
 =================================================================
-a. Week 6
----------
+OLD{
+2. Study parallel algorithm complexity and write paper (3+ weeks)
+-----------------------------------------------------------------
+}
+
+Week 6
+------
+The progress this week again depends on the unknown factor of whether
+the model can be made more accurate. 
+
+1-3. Isolate the reason why the predictions are very far off for the
+     simulator, but not too far off for the mandelbrot set. 
+     Fix the problem when/if found. 
+     How accurate does the model need to be in order to say that it
+     works effectively? What's the target accuracy?
+
+4-5. Does the model work under nonconstant workloads on the CPU? The
+     entire time_cpu(n) term is currently being divided by the number
+     of parallel threads. However, it is not necessarily the case that
+     everything that the CPU is doing is being parallelized, in fact,
+     it is basically never the case. Some of it is not parallelized,
+     so how do we fix this problem with the model? Of course, we need
+     to prioritize fixing the current bigger problems with the
+     model. If this were the current problem, then the GPU curve would
+     theoretically be just below the CPU line, because it is
+     predicting that everything is parallelized. This is not currently
+     the case, so we don't need to focus on it immediately. 
+
+--->OLDPLAN {
 i. Ask critical questions about the complexity class of the algorithms
 that were run. Are PyCuda and CUDA about the same runtime, or do they
 differ in a manner that is statistically significant? If the latter,
@@ -134,9 +162,10 @@ ii. Can we determine ratios between the various curves that were
 generated from gnuplot? Can we determine complexity class from the
 curves? If so, what is the difference in complexity between the
 parallel and sequential implementations?  
+}
 
-b. Week 7
----------
+Week 7
+------
 i. Based on the data, what about the benchmark programs analyzed makes
 them more or less suited to GPU computation? (i.e. Mandelbrot versus N
 queens). 
@@ -146,8 +175,8 @@ be given a Big-O complexity for run-time, so could a similar form of
 mathematics be applied to computational independence between the steps
 of any algorithm?
 
-c. Week 8
----------
+Week 8
+------
 i. Write research paper. (And the other paper?)
 
 Note: Whenever writing a benchmark algorithm for the 4 different
