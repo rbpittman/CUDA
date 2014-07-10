@@ -1,0 +1,257 @@
+read fast to global benchmark
+0
+GlobalTime: 0.000156 RegTime: 2.6e-05 GlobalTime: 1.6e-05 RegTime: 1.6e-05 GlobalTime: 0.000138 RegTime: 2.2e-05 GlobalTime: 1.6e-05 RegTime: 1.7e-05
+262144
+GlobalTime: 0.001748 RegTime: 0.00137 GlobalTime: 0.001654 RegTime: 0.001378 GlobalTime: 0.001747 RegTime: 0.001378 GlobalTime: 0.001654 RegTime: 0.001381
+524288
+GlobalTime: 0.003368 RegTime: 0.002777 GlobalTime: 0.003336 RegTime: 0.002786 GlobalTime: 0.003395 RegTime: 0.002789 GlobalTime: 0.003338 RegTime: 0.002788
+786432
+GlobalTime: 0.004996 RegTime: 0.004093 GlobalTime: 0.00491 RegTime: 0.00408 GlobalTime: 0.005003 RegTime: 0.004091 GlobalTime: 0.004915 RegTime: 0.004091
+1048576
+GlobalTime: 0.006614 RegTime: 0.005436 GlobalTime: 0.006536 RegTime: 0.005432 GlobalTime: 0.006647 RegTime: 0.005452 GlobalTime: 0.006548 RegTime: 0.005449
+1310720
+GlobalTime: 0.008392 RegTime: 0.006926 GlobalTime: 0.008259 RegTime: 0.006857 GlobalTime: 0.008383 RegTime: 0.006927 GlobalTime: 0.008285 RegTime: 0.006882
+1572864
+GlobalTime: 0.009884 RegTime: 0.008148 GlobalTime: 0.009798 RegTime: 0.008162 GlobalTime: 0.009898 RegTime: 0.008148 GlobalTime: 0.009799 RegTime: 0.00816
+1835008
+GlobalTime: 0.011536 RegTime: 0.009505 GlobalTime: 0.011444 RegTime: 0.009502 GlobalTime: 0.011532 RegTime: 0.009505 GlobalTime: 0.011436 RegTime: 0.009503
+2097152
+GlobalTime: 0.013311 RegTime: 0.011042 GlobalTime: 0.013219 RegTime: 0.011061 GlobalTime: 0.013315 RegTime: 0.01102 GlobalTime: 0.013214 RegTime: 0.011037
+2359296
+GlobalTime: 0.014788 RegTime: 0.012218 GlobalTime: 0.014694 RegTime: 0.012214 GlobalTime: 0.014796 RegTime: 0.012229 GlobalTime: 0.014693 RegTime: 0.012217
+2621440
+GlobalTime: 0.016425 RegTime: 0.013576 GlobalTime: 0.016324 RegTime: 0.013569 GlobalTime: 0.016423 RegTime: 0.013575 GlobalTime: 0.016323 RegTime: 0.013572
+2883584
+GlobalTime: 0.018237 RegTime: 0.015133 GlobalTime: 0.018172 RegTime: 0.015144 GlobalTime: 0.018272 RegTime: 0.015135 GlobalTime: 0.018185 RegTime: 0.015144
+3145728
+GlobalTime: 0.019691 RegTime: 0.016286 GlobalTime: 0.019589 RegTime: 0.016281 GlobalTime: 0.019689 RegTime: 0.016287 GlobalTime: 0.019575 RegTime: 0.016276
+3407872
+GlobalTime: 0.02132 RegTime: 0.017645 GlobalTime: 0.02122 RegTime: 0.017638 GlobalTime: 0.021319 RegTime: 0.017641 GlobalTime: 0.021222 RegTime: 0.017642
+3670016
+GlobalTime: 0.023262 RegTime: 0.01927 GlobalTime: 0.023115 RegTime: 0.01925 GlobalTime: 0.023207 RegTime: 0.019252 GlobalTime: 0.023096 RegTime: 0.019223
+3932160
+GlobalTime: 0.024568 RegTime: 0.020356 GlobalTime: 0.02448 RegTime: 0.020344 GlobalTime: 0.024575 RegTime: 0.020342 GlobalTime: 0.024473 RegTime: 0.020362
+4194304
+GlobalTime: 0.026202 RegTime: 0.021715 GlobalTime: 0.026103 RegTime: 0.021694 GlobalTime: 0.026201 RegTime: 0.021717 GlobalTime: 0.02611 RegTime: 0.0217
+4456448
+GlobalTime: 0.028152 RegTime: 0.023366 GlobalTime: 0.028079 RegTime: 0.023386 GlobalTime: 0.028153 RegTime: 0.023423 GlobalTime: 0.028066 RegTime: 0.023376
+4718592
+GlobalTime: 0.029474 RegTime: 0.024419 GlobalTime: 0.029366 RegTime: 0.02442 GlobalTime: 0.02947 RegTime: 0.024422 GlobalTime: 0.029367 RegTime: 0.024416
+4980736
+GlobalTime: 0.031095 RegTime: 0.025769 GlobalTime: 0.030988 RegTime: 0.025762 GlobalTime: 0.031096 RegTime: 0.025781 GlobalTime: 0.030999 RegTime: 0.025766
+5242880
+GlobalTime: 0.033128 RegTime: 0.027504 GlobalTime: 0.032995 RegTime: 0.027503 GlobalTime: 0.033103 RegTime: 0.027506 GlobalTime: 0.033032 RegTime: 0.027501
+5505024
+GlobalTime: 0.034357 RegTime: 0.028481 GlobalTime: 0.034265 RegTime: 0.028479 GlobalTime: 0.034356 RegTime: 0.02848 GlobalTime: 0.034262 RegTime: 0.028478
+5767168
+GlobalTime: 0.03598 RegTime: 0.029832 GlobalTime: 0.035882 RegTime: 0.029835 GlobalTime: 0.035976 RegTime: 0.029833 GlobalTime: 0.035882 RegTime: 0.029833
+6029312
+GlobalTime: 0.038044 RegTime: 0.031618 GlobalTime: 0.037955 RegTime: 0.031637 GlobalTime: 0.03805 RegTime: 0.031606 GlobalTime: 0.037944 RegTime: 0.031638
+6291456
+GlobalTime: 0.039243 RegTime: 0.032548 GlobalTime: 0.039159 RegTime: 0.032548 GlobalTime: 0.039243 RegTime: 0.032548 GlobalTime: 0.039147 RegTime: 0.032533
+6553600
+GlobalTime: 0.040882 RegTime: 0.033889 GlobalTime: 0.040774 RegTime: 0.033906 GlobalTime: 0.040884 RegTime: 0.033909 GlobalTime: 0.040777 RegTime: 0.033896
+6815744
+GlobalTime: 0.043039 RegTime: 0.035738 GlobalTime: 0.042926 RegTime: 0.035733 GlobalTime: 0.043018 RegTime: 0.035788 GlobalTime: 0.042922 RegTime: 0.03572
+7077888
+GlobalTime: 0.044117 RegTime: 0.036606 GlobalTime: 0.044035 RegTime: 0.036605 GlobalTime: 0.044136 RegTime: 0.036612 GlobalTime: 0.044048 RegTime: 0.036601
+7340032
+GlobalTime: 0.045766 RegTime: 0.037962 GlobalTime: 0.045674 RegTime: 0.037968 GlobalTime: 0.045769 RegTime: 0.037962 GlobalTime: 0.045662 RegTime: 0.037959
+7602176
+GlobalTime: 0.047971 RegTime: 0.039885 GlobalTime: 0.047846 RegTime: 0.039858 GlobalTime: 0.047965 RegTime: 0.039867 GlobalTime: 0.047852 RegTime: 0.039871
+7864320
+GlobalTime: 0.049038 RegTime: 0.040673 GlobalTime: 0.048937 RegTime: 0.040683 GlobalTime: 0.049014 RegTime: 0.04068 GlobalTime: 0.048936 RegTime: 0.04069
+8126464
+GlobalTime: 0.050648 RegTime: 0.042032 GlobalTime: 0.050553 RegTime: 0.042034 GlobalTime: 0.050671 RegTime: 0.042028 GlobalTime: 0.050557 RegTime: 0.042034
+8388608
+GlobalTime: 0.052902 RegTime: 0.043997 GlobalTime: 0.052846 RegTime: 0.043983 GlobalTime: 0.052896 RegTime: 0.043996 GlobalTime: 0.052797 RegTime: 0.043993
+8650752
+GlobalTime: 0.053923 RegTime: 0.044735 GlobalTime: 0.05382 RegTime: 0.04474 GlobalTime: 0.053905 RegTime: 0.044739 GlobalTime: 0.053821 RegTime: 0.044735
+8912896
+GlobalTime: 0.05554 RegTime: 0.046095 GlobalTime: 0.055448 RegTime: 0.046098 GlobalTime: 0.055548 RegTime: 0.046082 GlobalTime: 0.055443 RegTime: 0.046097
+9175040
+GlobalTime: 0.05784 RegTime: 0.048079 GlobalTime: 0.057768 RegTime: 0.048131 GlobalTime: 0.057854 RegTime: 0.048148 GlobalTime: 0.057762 RegTime: 0.048146
+9437184
+GlobalTime: 0.058818 RegTime: 0.048813 GlobalTime: 0.058718 RegTime: 0.048806 GlobalTime: 0.058806 RegTime: 0.048818 GlobalTime: 0.05872 RegTime: 0.04881
+9699328
+GlobalTime: 0.060443 RegTime: 0.050167 GlobalTime: 0.060347 RegTime: 0.05017 GlobalTime: 0.060442 RegTime: 0.050174 GlobalTime: 0.060345 RegTime: 0.050167
+9961472
+GlobalTime: 0.062825 RegTime: 0.052217 GlobalTime: 0.062684 RegTime: 0.052218 GlobalTime: 0.062884 RegTime: 0.052271 GlobalTime: 0.062728 RegTime: 0.052211
+10223616
+GlobalTime: 0.063697 RegTime: 0.052867 GlobalTime: 0.063607 RegTime: 0.05288 GlobalTime: 0.063696 RegTime: 0.052869 GlobalTime: 0.0636 RegTime: 0.052879
+10485760
+GlobalTime: 0.065338 RegTime: 0.054224 GlobalTime: 0.065219 RegTime: 0.054237 GlobalTime: 0.06533 RegTime: 0.054229 GlobalTime: 0.065237 RegTime: 0.05422
+10747904
+GlobalTime: 0.06776 RegTime: 0.056379 GlobalTime: 0.067671 RegTime: 0.05637 GlobalTime: 0.067735 RegTime: 0.056357 GlobalTime: 0.067652 RegTime: 0.056353
+11010048
+GlobalTime: 0.068601 RegTime: 0.056941 GlobalTime: 0.068491 RegTime: 0.056937 GlobalTime: 0.068575 RegTime: 0.056939 GlobalTime: 0.068497 RegTime: 0.056937
+11272192
+GlobalTime: 0.07022 RegTime: 0.058294 GlobalTime: 0.070125 RegTime: 0.058295 GlobalTime: 0.070214 RegTime: 0.058298 GlobalTime: 0.070118 RegTime: 0.058292
+11534336
+GlobalTime: 0.072711 RegTime: 0.060503 GlobalTime: 0.07261 RegTime: 0.060465 GlobalTime: 0.072721 RegTime: 0.060493 GlobalTime: 0.072595 RegTime: 0.060448
+11796480
+GlobalTime: 0.073483 RegTime: 0.061009 GlobalTime: 0.073388 RegTime: 0.060995 GlobalTime: 0.073488 RegTime: 0.061007 GlobalTime: 0.073382 RegTime: 0.060989
+12058624
+GlobalTime: 0.075109 RegTime: 0.062359 GlobalTime: 0.075012 RegTime: 0.062361 GlobalTime: 0.075115 RegTime: 0.062362 GlobalTime: 0.07502 RegTime: 0.06236
+12320768
+GlobalTime: 0.077647 RegTime: 0.064575 GlobalTime: 0.077534 RegTime: 0.064585 GlobalTime: 0.077673 RegTime: 0.064639 GlobalTime: 0.077577 RegTime: 0.064609
+12582912
+GlobalTime: 0.078365 RegTime: 0.065076 GlobalTime: 0.078291 RegTime: 0.065067 GlobalTime: 0.078383 RegTime: 0.065077 GlobalTime: 0.078279 RegTime: 0.06506
+12845056
+GlobalTime: 0.079995 RegTime: 0.06642 GlobalTime: 0.079907 RegTime: 0.06643 GlobalTime: 0.080003 RegTime: 0.066415 GlobalTime: 0.079897 RegTime: 0.066432
+13107200
+GlobalTime: 0.082592 RegTime: 0.068725 GlobalTime: 0.082494 RegTime: 0.068722 GlobalTime: 0.082641 RegTime: 0.068712 GlobalTime: 0.082517 RegTime: 0.068724
+13369344
+GlobalTime: 0.083273 RegTime: 0.069131 GlobalTime: 0.083171 RegTime: 0.069128 GlobalTime: 0.083275 RegTime: 0.069127 GlobalTime: 0.083168 RegTime: 0.069129
+13631488
+GlobalTime: 0.084895 RegTime: 0.070491 GlobalTime: 0.084796 RegTime: 0.070486 GlobalTime: 0.084883 RegTime: 0.070489 GlobalTime: 0.084794 RegTime: 0.070495
+13893632
+GlobalTime: 0.087566 RegTime: 0.072861 GlobalTime: 0.087434 RegTime: 0.072856 GlobalTime: 0.087564 RegTime: 0.072835 GlobalTime: 0.08747 RegTime: 0.072855
+14155776
+GlobalTime: 0.088155 RegTime: 0.073194 GlobalTime: 0.08806 RegTime: 0.073201 GlobalTime: 0.088154 RegTime: 0.073204 GlobalTime: 0.088066 RegTime: 0.073192
+14417920
+GlobalTime: 0.089786 RegTime: 0.074554 GlobalTime: 0.089686 RegTime: 0.074542 GlobalTime: 0.089767 RegTime: 0.074552 GlobalTime: 0.089672 RegTime: 0.074544
+14680064
+GlobalTime: 0.092481 RegTime: 0.076942 GlobalTime: 0.092472 RegTime: 0.076986 GlobalTime: 0.092518 RegTime: 0.076998 GlobalTime: 0.092421 RegTime: 0.076986
+14942208
+GlobalTime: 0.093037 RegTime: 0.07727 GlobalTime: 0.092954 RegTime: 0.077263 GlobalTime: 0.093049 RegTime: 0.077271 GlobalTime: 0.092955 RegTime: 0.077256
+15204352
+GlobalTime: 0.094674 RegTime: 0.078632 GlobalTime: 0.094583 RegTime: 0.078613 GlobalTime: 0.094686 RegTime: 0.078621 GlobalTime: 0.094573 RegTime: 0.07861
+15466496
+GlobalTime: 0.097465 RegTime: 0.081081 GlobalTime: 0.097347 RegTime: 0.0811 GlobalTime: 0.097503 RegTime: 0.081077 GlobalTime: 0.097344 RegTime: 0.081101
+15728640
+GlobalTime: 0.097914 RegTime: 0.081327 GlobalTime: 0.097829 RegTime: 0.081349 GlobalTime: 0.09793 RegTime: 0.081325 GlobalTime: 0.097839 RegTime: 0.081322
+15990784
+GlobalTime: 0.099569 RegTime: 0.082694 GlobalTime: 0.099467 RegTime: 0.082688 GlobalTime: 0.099571 RegTime: 0.082689 GlobalTime: 0.099469 RegTime: 0.08269
+16252928
+GlobalTime: 0.102383 RegTime: 0.085215 GlobalTime: 0.102303 RegTime: 0.085216 GlobalTime: 0.102394 RegTime: 0.085222 GlobalTime: 0.102319 RegTime: 0.085214
+16515072
+GlobalTime: 0.102832 RegTime: 0.085397 GlobalTime: 0.10274 RegTime: 0.085397 GlobalTime: 0.102843 RegTime: 0.085392 GlobalTime: 0.102739 RegTime: 0.085394
+16777216
+GlobalTime: 0.104441 RegTime: 0.08675 GlobalTime: 0.10436 RegTime: 0.086749 GlobalTime: 0.104458 RegTime: 0.086755 GlobalTime: 0.104363 RegTime: 0.086742
+17039360
+GlobalTime: 0.107432 RegTime: 0.089354 GlobalTime: 0.107264 RegTime: 0.089354 GlobalTime: 0.107362 RegTime: 0.08937 GlobalTime: 0.10728 RegTime: 0.089354
+17301504
+GlobalTime: 0.107713 RegTime: 0.089461 GlobalTime: 0.10763 RegTime: 0.089466 GlobalTime: 0.1077 RegTime: 0.089446 GlobalTime: 0.107609 RegTime: 0.089448
+17563648
+GlobalTime: 0.10937 RegTime: 0.090822 GlobalTime: 0.109248 RegTime: 0.090801 GlobalTime: 0.109326 RegTime: 0.090821 GlobalTime: 0.109258 RegTime: 0.090804
+17825792
+GlobalTime: 0.112266 RegTime: 0.093474 GlobalTime: 0.1122 RegTime: 0.093433 GlobalTime: 0.112285 RegTime: 0.093447 GlobalTime: 0.112214 RegTime: 0.093434
+18087936
+GlobalTime: 0.112591 RegTime: 0.093535 GlobalTime: 0.112497 RegTime: 0.093518 GlobalTime: 0.112615 RegTime: 0.093517 GlobalTime: 0.112517 RegTime: 0.093527
+18350080
+GlobalTime: 0.114229 RegTime: 0.094895 GlobalTime: 0.114137 RegTime: 0.094891 GlobalTime: 0.114225 RegTime: 0.09489 GlobalTime: 0.114136 RegTime: 0.094886
+18612224
+GlobalTime: 0.117225 RegTime: 0.097574 GlobalTime: 0.117152 RegTime: 0.0976 GlobalTime: 0.117261 RegTime: 0.09762 GlobalTime: 0.117159 RegTime: 0.09757
+18874368
+GlobalTime: 0.117497 RegTime: 0.097589 GlobalTime: 0.117398 RegTime: 0.0976 GlobalTime: 0.117519 RegTime: 0.097589 GlobalTime: 0.11739 RegTime: 0.097584
+19136512
+GlobalTime: 0.119138 RegTime: 0.098953 GlobalTime: 0.11904 RegTime: 0.098939 GlobalTime: 0.119136 RegTime: 0.098944 GlobalTime: 0.119044 RegTime: 0.098949
+19398656
+GlobalTime: 0.122199 RegTime: 0.10171 GlobalTime: 0.122101 RegTime: 0.10171 GlobalTime: 0.122203 RegTime: 0.101726 GlobalTime: 0.122105 RegTime: 0.101723
+19660800
+GlobalTime: 0.122396 RegTime: 0.101663 GlobalTime: 0.12229 RegTime: 0.101655 GlobalTime: 0.122385 RegTime: 0.101651 GlobalTime: 0.12231 RegTime: 0.101648
+19922944
+GlobalTime: 0.124005 RegTime: 0.103004 GlobalTime: 0.123922 RegTime: 0.10302 GlobalTime: 0.124011 RegTime: 0.103009 GlobalTime: 0.123911 RegTime: 0.102994
+20185088
+GlobalTime: 0.12711 RegTime: 0.105846 GlobalTime: 0.127059 RegTime: 0.105799 GlobalTime: 0.127134 RegTime: 0.105863 GlobalTime: 0.12703 RegTime: 0.105828
+20447232
+GlobalTime: 0.127276 RegTime: 0.105713 GlobalTime: 0.127181 RegTime: 0.105723 GlobalTime: 0.127292 RegTime: 0.10571 GlobalTime: 0.127184 RegTime: 0.105723
+20709376
+GlobalTime: 0.128909 RegTime: 0.107069 GlobalTime: 0.128807 RegTime: 0.107082 GlobalTime: 0.128917 RegTime: 0.10708 GlobalTime: 0.128817 RegTime: 0.107069
+20971520
+GlobalTime: 0.132081 RegTime: 0.10997 GlobalTime: 0.131996 RegTime: 0.109932 GlobalTime: 0.132076 RegTime: 0.109952 GlobalTime: 0.131992 RegTime: 0.109996
+21233664
+GlobalTime: 0.132202 RegTime: 0.10979 GlobalTime: 0.132081 RegTime: 0.109782 GlobalTime: 0.132203 RegTime: 0.109796 GlobalTime: 0.132084 RegTime: 0.109786
+21495808
+GlobalTime: 0.1338 RegTime: 0.111151 GlobalTime: 0.133711 RegTime: 0.111135 GlobalTime: 0.133811 RegTime: 0.111149 GlobalTime: 0.133701 RegTime: 0.111134
+21757952
+GlobalTime: 0.136992 RegTime: 0.114066 GlobalTime: 0.136905 RegTime: 0.114079 GlobalTime: 0.136996 RegTime: 0.114072 GlobalTime: 0.136946 RegTime: 0.114075
+22020096
+GlobalTime: 0.137066 RegTime: 0.113853 GlobalTime: 0.136984 RegTime: 0.113854 GlobalTime: 0.137059 RegTime: 0.113849 GlobalTime: 0.136967 RegTime: 0.113847
+22282240
+GlobalTime: 0.138692 RegTime: 0.115209 GlobalTime: 0.138583 RegTime: 0.115203 GlobalTime: 0.13869 RegTime: 0.115205 GlobalTime: 0.138587 RegTime: 0.115198
+22544384
+GlobalTime: 0.141964 RegTime: 0.118147 GlobalTime: 0.141872 RegTime: 0.118212 GlobalTime: 0.141967 RegTime: 0.118166 GlobalTime: 0.141871 RegTime: 0.118215
+22806528
+GlobalTime: 0.141964 RegTime: 0.117912 GlobalTime: 0.141854 RegTime: 0.117919 GlobalTime: 0.141952 RegTime: 0.117927 GlobalTime: 0.141855 RegTime: 0.117915
+23068672
+GlobalTime: 0.143579 RegTime: 0.119279 GlobalTime: 0.143492 RegTime: 0.119276 GlobalTime: 0.143583 RegTime: 0.119279 GlobalTime: 0.143491 RegTime: 0.119262
+23330816
+GlobalTime: 0.146909 RegTime: 0.12231 GlobalTime: 0.146813 RegTime: 0.122284 GlobalTime: 0.146908 RegTime: 0.122353 GlobalTime: 0.146825 RegTime: 0.12233
+23592960
+GlobalTime: 0.146868 RegTime: 0.121989 GlobalTime: 0.146744 RegTime: 0.121983 GlobalTime: 0.146837 RegTime: 0.121972 GlobalTime: 0.146733 RegTime: 0.121972
+23855104
+GlobalTime: 0.148467 RegTime: 0.123331 GlobalTime: 0.148378 RegTime: 0.123346 GlobalTime: 0.148473 RegTime: 0.123337 GlobalTime: 0.148365 RegTime: 0.123334
+24117248
+GlobalTime: 0.151898 RegTime: 0.126439 GlobalTime: 0.151786 RegTime: 0.12644 GlobalTime: 0.151889 RegTime: 0.126437 GlobalTime: 0.151743 RegTime: 0.126445
+24379392
+GlobalTime: 0.151751 RegTime: 0.126046 GlobalTime: 0.151658 RegTime: 0.126052 GlobalTime: 0.151735 RegTime: 0.126051 GlobalTime: 0.151639 RegTime: 0.126043
+24641536
+GlobalTime: 0.153351 RegTime: 0.1274 GlobalTime: 0.153267 RegTime: 0.127399 GlobalTime: 0.153379 RegTime: 0.127405 GlobalTime: 0.153285 RegTime: 0.127403
+24903680
+GlobalTime: 0.15689 RegTime: 0.130569 GlobalTime: 0.156709 RegTime: 0.130573 GlobalTime: 0.156801 RegTime: 0.130571 GlobalTime: 0.1567 RegTime: 0.130568
+25165824
+GlobalTime: 0.156633 RegTime: 0.13012 GlobalTime: 0.156527 RegTime: 0.130108 GlobalTime: 0.156639 RegTime: 0.130116 GlobalTime: 0.156522 RegTime: 0.130105
+25427968
+GlobalTime: 0.158234 RegTime: 0.131467 GlobalTime: 0.158158 RegTime: 0.131469 GlobalTime: 0.158251 RegTime: 0.131454 GlobalTime: 0.158151 RegTime: 0.131469
+25690112
+GlobalTime: 0.161771 RegTime: 0.134721 GlobalTime: 0.161682 RegTime: 0.134697 GlobalTime: 0.161747 RegTime: 0.134691 GlobalTime: 0.161685 RegTime: 0.134715
+25952256
+GlobalTime: 0.161534 RegTime: 0.134189 GlobalTime: 0.16143 RegTime: 0.134181 GlobalTime: 0.161522 RegTime: 0.134184 GlobalTime: 0.161418 RegTime: 0.134182
+26214400
+GlobalTime: 0.163153 RegTime: 0.135543 GlobalTime: 0.16307 RegTime: 0.135545 GlobalTime: 0.163156 RegTime: 0.135547 GlobalTime: 0.163052 RegTime: 0.13553
+26476544
+GlobalTime: 0.166686 RegTime: 0.138799 GlobalTime: 0.166642 RegTime: 0.138791 GlobalTime: 0.166734 RegTime: 0.138795 GlobalTime: 0.166597 RegTime: 0.138858
+26738688
+GlobalTime: 0.166409 RegTime: 0.138245 GlobalTime: 0.166307 RegTime: 0.138236 GlobalTime: 0.166423 RegTime: 0.138236 GlobalTime: 0.166302 RegTime: 0.138251
+27000832
+GlobalTime: 0.168019 RegTime: 0.139599 GlobalTime: 0.167939 RegTime: 0.139588 GlobalTime: 0.168037 RegTime: 0.139602 GlobalTime: 0.16794 RegTime: 0.139592
+27262976
+GlobalTime: 0.171644 RegTime: 0.142934 GlobalTime: 0.171556 RegTime: 0.142945 GlobalTime: 0.171651 RegTime: 0.142933 GlobalTime: 0.171558 RegTime: 0.142947
+27525120
+GlobalTime: 0.171307 RegTime: 0.142309 GlobalTime: 0.171201 RegTime: 0.142306 GlobalTime: 0.171329 RegTime: 0.142309 GlobalTime: 0.171216 RegTime: 0.142318
+27787264
+GlobalTime: 0.172935 RegTime: 0.143666 GlobalTime: 0.17283 RegTime: 0.143684 GlobalTime: 0.172926 RegTime: 0.143668 GlobalTime: 0.17283 RegTime: 0.143666
+28049408
+GlobalTime: 0.176581 RegTime: 0.147026 GlobalTime: 0.176453 RegTime: 0.14703 GlobalTime: 0.176601 RegTime: 0.147084 GlobalTime: 0.176512 RegTime: 0.147078
+28311552
+GlobalTime: 0.176176 RegTime: 0.146383 GlobalTime: 0.176099 RegTime: 0.146373 GlobalTime: 0.1762 RegTime: 0.146384 GlobalTime: 0.176102 RegTime: 0.146376
+28573696
+GlobalTime: 0.177816 RegTime: 0.147743 GlobalTime: 0.17772 RegTime: 0.147733 GlobalTime: 0.177813 RegTime: 0.147735 GlobalTime: 0.177719 RegTime: 0.147736
+28835840
+GlobalTime: 0.18152 RegTime: 0.151164 GlobalTime: 0.18147 RegTime: 0.151196 GlobalTime: 0.181527 RegTime: 0.151167 GlobalTime: 0.181478 RegTime: 0.151182
+29097984
+GlobalTime: 0.181072 RegTime: 0.150445 GlobalTime: 0.180995 RegTime: 0.15043 GlobalTime: 0.181097 RegTime: 0.150436 GlobalTime: 0.180965 RegTime: 0.150445
+29360128
+GlobalTime: 0.182708 RegTime: 0.151795 GlobalTime: 0.182606 RegTime: 0.151791 GlobalTime: 0.182712 RegTime: 0.151788 GlobalTime: 0.182606 RegTime: 0.151795
+29622272
+GlobalTime: 0.186462 RegTime: 0.155296 GlobalTime: 0.186386 RegTime: 0.155289 GlobalTime: 0.186478 RegTime: 0.155311 GlobalTime: 0.186373 RegTime: 0.155294
+29884416
+GlobalTime: 0.185977 RegTime: 0.154512 GlobalTime: 0.185887 RegTime: 0.154504 GlobalTime: 0.18598 RegTime: 0.154502 GlobalTime: 0.185871 RegTime: 0.154501
+30146560
+GlobalTime: 0.187589 RegTime: 0.155858 GlobalTime: 0.187506 RegTime: 0.155865 GlobalTime: 0.187613 RegTime: 0.155857 GlobalTime: 0.187504 RegTime: 0.155861
+30408704
+GlobalTime: 0.191444 RegTime: 0.159436 GlobalTime: 0.191332 RegTime: 0.15944 GlobalTime: 0.191443 RegTime: 0.15944 GlobalTime: 0.191368 RegTime: 0.159431
+30670848
+GlobalTime: 0.190845 RegTime: 0.158576 GlobalTime: 0.190751 RegTime: 0.158565 GlobalTime: 0.190869 RegTime: 0.158568 GlobalTime: 0.190764 RegTime: 0.158567
+30932992
+GlobalTime: 0.192485 RegTime: 0.159923 GlobalTime: 0.192381 RegTime: 0.15993 GlobalTime: 0.19249 RegTime: 0.159933 GlobalTime: 0.192387 RegTime: 0.159927
+31195136
+GlobalTime: 0.196372 RegTime: 0.16353 GlobalTime: 0.196295 RegTime: 0.163577 GlobalTime: 0.19636 RegTime: 0.163576 GlobalTime: 0.196314 RegTime: 0.163525
+31457280
+GlobalTime: 0.195747 RegTime: 0.162635 GlobalTime: 0.195677 RegTime: 0.162637 GlobalTime: 0.195743 RegTime: 0.162625 GlobalTime: 0.195668 RegTime: 0.162643
+31719424
+GlobalTime: 0.197381 RegTime: 0.16398 GlobalTime: 0.197274 RegTime: 0.163995 GlobalTime: 0.19738 RegTime: 0.163978 GlobalTime: 0.197281 RegTime: 0.164003
+31981568
+GlobalTime: 0.20131 RegTime: 0.167649 GlobalTime: 0.201213 RegTime: 0.167659 GlobalTime: 0.201327 RegTime: 0.167705 GlobalTime: 0.20123 RegTime: 0.167707
+32243712
+GlobalTime: 0.200652 RegTime: 0.166711 GlobalTime: 0.200538 RegTime: 0.166711 GlobalTime: 0.200642 RegTime: 0.166709 GlobalTime: 0.200557 RegTime: 0.166708
+32505856
+GlobalTime: 0.202278 RegTime: 0.168062 GlobalTime: 0.202184 RegTime: 0.168049 GlobalTime: 0.202264 RegTime: 0.168066 GlobalTime: 0.202181 RegTime: 0.168055
+32768000
+GlobalTime: 0.206289 RegTime: 0.171798 GlobalTime: 0.20617 RegTime: 0.171796 GlobalTime: 0.206242 RegTime: 0.17178 GlobalTime: 0.20613 RegTime: 0.171792
+33030144
+GlobalTime: 0.205535 RegTime: 0.170766 GlobalTime: 0.205456 RegTime: 0.170764 GlobalTime: 0.205527 RegTime: 0.170768 GlobalTime: 0.205469 RegTime: 0.170767
+33292288
+GlobalTime: 0.207168 RegTime: 0.172119 GlobalTime: 0.207058 RegTime: 0.172114 GlobalTime: 0.207155 RegTime: 0.17212 GlobalTime: 0.207066 RegTime: 0.172117

@@ -1,0 +1,9 @@
+fast/efficient {
+global read: 6.21128037892e-09 * x + 0.000234842300983
+global write: 5.89864157519e-09 * x + 0.000543892384144
+register read: 5.16990894539e-09 * x^1.0 + 1.82539230309e-05
+register write: 5.16990894539e-09 * x^1.0 + 1.66893011055e-05
+
+7.287326297999999e-10 is the new parallel write. 
+1.0413714335299995e-09 is the new parallel read. 
+}

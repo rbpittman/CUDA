@@ -74,36 +74,6 @@ Maybe set the priority to high.
 
 Meeting:
 --------
-Global memory access complexities:
-Mandelbrot:  gn
-Matrix mult: g*(2n^1.5 + n)
-Simulator:   5fg*(n^2 + n), f = number of frames
-
-GPU Speed up ratios:
-Mandelbrot:  C++ / CUDA = 5.94510
-Matrix Mult: C++ / CUDA = 2.69069
-Simulator:   C++ / CUDA = 0.77348
-
-Let's assume that the CPU and GPU algorithm have in common the type of 
-arithmetic operations they must do (aside from a few thread index computation
-things). Then we can say that the GPU has:
-p = threads
-n = input size
-g = time to execute a global memory read/write
-
-Then the time it takes the CPU to execute a program is proportional to the 
-number of operations:
-t_cpu = (1 / cpu_flops) * f(n)
-where f(n) is a function that gives the number of operations required
-to solve the benchmark problem with an input of size n. Presumably,
-f(n) is the same for the CPU as for the GPU. 
-t_gpu = ((1 / gpu_flops) * f(n) / p) + h(n)g
-where gpu_flops is the number of flops that one thread of the gpu can
-perform, h(n) is a function of input size n that gives the number of
-global memory accesses performed. 
-
-One problem is the values of cpu_flops and gpu_flops. We can find c for:
-c = cpu_flops / gpu_flops
 
 
 
@@ -111,35 +81,6 @@ Meeting:
 --------
 Running benchmark, will see in the morning whether the graph is better. 
 
-Try 1:
-------
-
-time_gpu(n) = g * h(n) + (c(n) / p)
-h(n) is the number of global memory read/writes. 
-c(n) is some function of n that gives the time spent on other
-numerical calculations. 
-p is number of threads. 
-This formula only applies for larger values of p. 
-
-time_cpu(n) = x * c(n)
-where x is a factor presumably such that x < 1 which means that the
-cpu can execute faster than the gpu in terms of general calculations. 
-
-Mandelbrot:
-h(n) = n
-p = min(768, n)
-time_gpu(n) = gn + (c(n) / min(768, n))
-
-Try 2:
-------
-p = number of threads
-time_gpu(n) = c * (time_cpu(n) / p) + g * h(n)
-
-Mandelbrot:
-p = min(768, n)
-time_gpu(n) = c * (time_cpu(n) / min(768, n)) + gn
-Assume a decent number of pixels (larger than 27X27). 
-time_gpu(n) = c * (time_cpu(n) / 768) + gn + init_time
 
 --->
 The power analysis on the "mean" python turned up the same power. 
@@ -211,3 +152,129 @@ Recreate model in more detail including all the types of global memory access.
 PLAN:
 -----
 Brief look at what particles simulations do for initial velocity. 
+
+
+Meeting:
+--------
+memset is also linear. 
+
+TOMORROW MORNING:
+-----------------
+Get rid of "First el" print statement. 
+Then bench it with a script. 
+Then do the same thing with the runRegisters function. 
+
+THEN do the same thing with writing. 
+
+
+PLAN:
+-----
+Brief look at what particles simulations do for initial velocity. 
+Accurately test the access time difference between global memory read
+and write. 
+
+
+Meeting:
+========
+
+Made cool modeling program that shows the projected GPU performance. 
+
+Used model prediction on the Mandelbrot set. Off by 2.5 coefficient. 
+
+Model is pretty far off for simulator. 
+
+Only just started debugging model, so it could be easy or very
+difficult. 
+
+Realized that this model has nothing to do with Python or PyCUDA. The
+PyCUDA host code is Python, but GPU code is C++. 
+
+Discuss plan ideas. problem with the model's theoretical accuracy. 
+
+
+PLAN:
+-----
+Attempt to fix model. 
+
+
+Other:
+------
+
+laptop might burn out. 
+
+hiking.
+
+
+Tomorrow:
+---------
+Figure out how read and writes with the GPU are handled. Why is it so
+much faster than my model predicts?
+
+
+Meeting:
+========
+
+Found cool command nvclock to get clock speed. 
+
+Idea: What if the problem is that I'm not just iterating a single
+thread in the actual benchmarks, I'm iterating multiple threads?
+
+Do some tests to see if the GPU can do some form of parallel access:
+
+Test 1:
+Instead of testing iterating a single thread over the elements of an 
+array, try running a situation where each thread accesses the 
+i = ((blockDim.x * blockIdx.x) + threadIdx.x) element of an
+array. Then we can see if the time taken is faster than one thread. 
+Maybe make all the threads compute the sum of the array. 
+
+Global access test:
+We iterate over the array with all the threads, adding to local sum
+the ith element of the array. Then we place the final sum in that
+array it the threads index location. 
+Register access test:
+Same, except instead of adding the ith element, we add the value of
+i.
+
+Test 2:
+Keep the number of global accesses the same, except this time run an
+increasing number of threads all doing the same thing. See if the
+execution time increases according to the same equation (this new
+equation will be in terms of the number of global memory accesses, not
+the number of threads). 
+
+Plan:
+-----
+
+Write up the first test to see if it differs greatly from the initial
+global mem read test. 
+
+Global write:
+1. Write a program that maximizes global memory efficiency. 
+   Write the equivalent in register format. 
+2. Write a program that minimizes global memory efficiency. (0, 16)
+   Write the equivalent in register format. 
+
+
+Tomorrow:
+---------
+Write a benchmark script for the
+~/CUDA/read_write_tests/writeGlobal.cu program. 
+
+
+
+Meeting:
+--------
+Found the sawtooth ridge data. This happens for all 4 data samples. 
+Got a much more reasonable estimate for the write and read times:
+7.287326297999999e-10 is the new parallel write. 
+1.0413714335299995e-09 is the new parallel read. 
+
+MUCH BETTER SUCCESS WITH THE NEW VALUES! tada what what what what what what what what 
+
+
+Tomorrow:
+---------
+Plug in the new read and write times to the model for the simulator
+to see if it is any better. 
+Try to figure out why sawtooth ridge data exists. 
