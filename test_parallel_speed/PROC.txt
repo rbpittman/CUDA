@@ -1,0 +1,9 @@
+Write a kernel that does a specific large computation. 
+This will compute the 100th or so prime number. This operation should 
+take like 5sec/(512*4). 
+Increase the number of threads and time how long it takes to complete. 
+
+Theoretically, it should increase only when the number of threads 
+exceeds 768. 
+Go up to 1024 threads, stepping such that all steps are divisible by 
+32, and the number of blocks does not exceed 8. 
