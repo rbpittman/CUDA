@@ -166,6 +166,20 @@ parallel and sequential implementations?
 
 Week 7
 ------
+1. Diagnose why the Mandelbrot set is slower than I'm predicting it is. 
+   Test the parallel thread computation speed. 
+2. Write more of the theory section. What to do once the model seems accurate?
+3. Continue improving model. 
+4. Continue writing paper. 
+5. What to do next after the model is decent? How do we know it's good? 
+   How to explain why the model is good? The Mandelbrot set is good
+   because it tests the base case where there are a very low number of
+   global memory accesses that are affected by the linear time. 
+
+
+--->OLDPLAN {
+Week 7
+------
 i. Based on the data, what about the benchmark programs analyzed makes
 them more or less suited to GPU computation? (i.e. Mandelbrot versus N
 queens). 
@@ -174,6 +188,7 @@ ii. Can the independence of algorithms be classified? Algorithms can
 be given a Big-O complexity for run-time, so could a similar form of
 mathematics be applied to computational independence between the steps
 of any algorithm?
+}
 
 Week 8
 ------
