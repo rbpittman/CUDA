@@ -1,3 +1,5 @@
+section 1:
+----------
 Write a kernel that does a specific large computation. 
 This will compute the 100th or so prime number. This operation should 
 take like 5sec/(512*4). 
@@ -7,3 +9,99 @@ Theoretically, it should increase only when the number of threads
 exceeds 768. 
 Go up to 1024 threads, stepping such that all steps are divisible by 
 32, and the number of blocks does not exceed 8. 
+
+
+section 2:
+----------
+Determining the "quality of parallel performance". 
+How many things on average does it do simultaneously?
+Procedure:
+1.
+Time EXACTLY how long it takes to do one thing, e.g., compute lots of
+primes. This should probably take about 1 second. 
+If that time is t, then the time the GPU would take if it were
+sequential would be n*t, where n is the number of times it does that
+task. We can graph this linear equation. 
+2.
+Benchmark how long it actually takes to run multiple threads doing
+that same computation. Determine an equation for this line. This
+equation MUST be linear, because the current model takes only a
+parallel coefficient, not a function. This linear equation should have
+the form f(n) = c*n, where n is the input size. 
+3.
+We assume that the following function is correct (which the current
+model uses): sequential_time / parallelality = parallel_time
+where parallelality is the number of things the processor can do
+simultaneously (as measured expirimentally). 
+We compute the value of parallelality by substituting in the value of
+sequential_time, which is n*t, and the value of parallel_time, which
+is the equation we determined in part 2. Solving for parallelality we
+have: sequential_time / parallel_time = parallelality
+The parallel_time needs to be linear so that the n cancels out to give
+a constant. 
+
+PROC RESULTS:
+-------------
+
+Determined a good number of primes is 620. 
+
+1.
+1.01417*n
+
+2.
+0.0069*n + 0.1
+Warning: there is a stray "+ c", validity of value for parallelality 
+may be inaccurate. 
+
+3.
+1.01417 / 0.0069 = 146.98115942028986
+
+Analysis:
+---------
+768 / 4 = 192 is the good power for the Mandelbrot set.
+What coefficient x of the n in step 2 is required to produce this value?
+1.01417 / x = 192
+x = 1.01417 / 192 = 0.0052821354167
+
+Mathematica fit data for the blocky data:
+0.535773 + 0.00576149 * x
+0.784105 + 0.00280516 x + 5.77409*10^-6 x^2
+
+
+Retest step 2 and 3 by increasing data to 1024
+----------------------------------------------
+Only including data above 200, because parallelality is somewhere below
+that, and we need to be using all cores to have good data to test for the 
+parallelality value. 
+0.007063 * n + 0.12
+
+1.01417 / 0.007063 = 143.58912643352684
+
+Now test with 144 threads.
+Ok for Mandelbrot, a little high. 
+Not good at all for matrix multiplication. Way too high. 
+Simulator is super close, just a hair too low for the worst case. 
+
+
+Testing an iSum...
+===================
+0.945479 is the time for 1 thread. 
+sequential equation would be 0.945479 * n. 
+
+Got 0.005721*n + 0.14 for the equation for the data. 
+0.945479 / 0.005721 = 165
+
+Analysis:
+This value is higher, and I guess that makes some sense because there
+are no if stmts, even though the other test should have followed the
+exact same line of execution for each thread. 
+
+
+Testing parallelality for maximum warp divergence
+=================================================
+
+0.09467 * n for one thread. 
+
+0.0195 * n + 0.02 for many threads. 
+
+This produces a parallelality value of:

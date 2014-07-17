@@ -5,8 +5,8 @@
 
 using namespace std;
 
-#define NTH_PRIME 400
-#define STEP 1
+#define NTH_PRIME 620
+#define STEP 4
 
 //Pre: There is only one block of threads. 
 //     sum length is the same as the number of threads. 
@@ -28,17 +28,16 @@ __global__ void prime(int * sum) {
     }
     curr++;
   }
-  __syncthreads();
   sum[0] = total;
 }
 
 //Pre: 0 <= size <= 512
-//     size % 32 == 0. 
 double runTest(int size) {
   int * devSum;
   cudaMalloc(&devSum, sizeof(int));
   
-  int blocks = 1;
+  //int blocks = 1;
+  int blocks = 2;
   int threads = size;
   boost::posix_time::ptime t1(boost::posix_time::microsec_clock::local_time());
   prime<<<blocks,threads>>>(devSum);
@@ -59,14 +58,21 @@ double runTest(int size) {
   return (micro / 1000000.);
 }
 
+#define TRIALS 2
+
 int main() {
   runTest(10);//Warm up
-  for(int theValueThatTellsHowManyThreadsToRun = 0; 
-      theValueThatTellsHowManyThreadsToRun <= 512; 
-      theValueThatTellsHowManyThreadsToRun += STEP) {
-    cout << theValueThatTellsHowManyThreadsToRun << endl 
-	 << "0m" << runTest(theValueThatTellsHowManyThreadsToRun) << ' '
-	 << "0m" << runTest(theValueThatTellsHowManyThreadsToRun) << endl;
+  cout << "Parallel thread benchmark\nTrials: " << TRIALS << endl;
+  for(int size = 0; size <= 512; size += STEP) {
+    cout << 2 * size << endl;
+    // cout << size << endl;
+    for(int i = 0; i < TRIALS; i++) {
+      cout << "0m" << runTest(size);
+      if(i != TRIALS - 1) {
+	cout << ' ';
+      }
+    }
+    cout << endl;
   }
   return(0);
 }

@@ -1,4 +1,4 @@
-Meeting:
+ Meeting:
 ---------
 
 I forgot to __syncthreads() before doing the write. Now the simulation doesn't 
@@ -270,11 +270,248 @@ Got a much more reasonable estimate for the write and read times:
 7.287326297999999e-10 is the new parallel write. 
 1.0413714335299995e-09 is the new parallel read. 
 
-MUCH BETTER SUCCESS WITH THE NEW VALUES! tada what what what what what what what what 
+MUCH BETTER SUCCESS WITH THE NEW VALUES! tada what what what what
+Simulator is a little low, but when I scale it to fit, it's a 1.81 
+power curve, not 2.00. I think it's because the x**2 term is too 
+small, because the read and writes are very small. So maybe in the
+best case that is actually what should happen. The power should appear 
+to be smaller. The only way to test this is too actually test the worst 
+read/write case possible. 
+
+NOTE:
+-----
+http://devblogs.nvidia.com/parallelforall/how-access-global-memory-efficiently-cuda-c-kernels/
+has good information on global memory accesses. My device is compute capability
+1.1, so it only allows for global memory coalescing for a half warp, where 
+a warp is 32 threads. 
+
+
+Meeting:
+--------
+Read up and found a good page as listed in the note above^.
+
 
 
 Tomorrow:
 ---------
-Plug in the new read and write times to the model for the simulator
-to see if it is any better. 
-Try to figure out why sawtooth ridge data exists. 
+Write the parse file for the benchmark that was running. 
+Then download the individual files and compute the equation for each
+to see which is the slowest. 
+Wrong {
+2 should be fastest,
+4 should be a bit slower,
+8 should be even slower,
+16 should be the slowest because it jumps over the half warps,
+32 should be the same as 16.
+} wrong because none of the above step settings ever uses any form
+  of global memory coalescing, so they should all be about the 
+  same speed. 
+
+TODO:
+try the step size for 1. 
+
+
+lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+NO DR. B
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+lllllllllllllllllllllllllllllllllllllllllllllllllllllllllllll
+
+======
+Monday
+======
+
+Write a test that computes the curve f(n) where n is the number of
+threads simultaneously being executed. Test up to 4 or so full blocks
+of threads. 
+Prints out the number of currently active warps. 
+Checking to see if scaling by the same constant produces viable
+results. 
+
+Model problem: Currently the gap is too low, trying to find the term
+that needs to be increased.
+
+Can't scale the whole model, because the simulator would then be 
+wrong: the curve goes above, then below. Not good. 
+
+Can't simply divide the number of processes simultaneously executing,
+because then the simulator inefficient curve is still too low, while
+the Mandelbrot set curve is dead on. 
+
+
+Ran tests: computed primes in each thread and timed how long it took
+for an increasing number of threads. 
+Computed primes in each threadblock (32 threads per block), and timed
+how long it took for an increasing number of blocks. 
+Reading information that might explain some of the strange behavior of
+the GPU. Need to REALLY learn how it works.
+
+Found out something interesting! For some reason, when I reboot, a
+CUDA program will actually run if I run it in sudo mode. From then on,
+any program will work for the GPU. The same goes for nvidia-smi. 
+
+"Fixed" the problem with the reboot not activating the GPU. Put
+nvidia-smi command into the file /etc/rc.local to make it "sudo"
+activate the GPU. 
+
+Tomorrow:
+---------
+Continue learning how the GPU REALLY works. 
+
+
+=======
+Tuesday
+=======
+
+Got my ubuntu back in 3D mode. lol. sudo apt-get purge nvidia*
+
+Maybe instead of modeling based on the number of concurrent. 
+
+INSANE: Finally realized that I do not need to worry about the limits
+of shared mem on the simulator because I am already limiting the
+number of threads to less than 512! So I wrote a quick shared mem
+simulator, benched it, and it is currently below the best case bounds
+for my model!! 
+
+How do I determine the GPU's "quality of parallel execution"?
+i.e., exactly how many things does it do simultaneously?
+
+Need to continue looking into the quality of parallelism of the GPU,
+and exactly how the GPU does things simultaneously. 
+
+Finding that, found that it looked linear, and then
+quadratic. Realized that that was because initially all the cores were
+not being used, so it should have been much more flat. 
+
+Task: Run a new benchmark to determine parallelism more accurately by 
+running it up to 1024. 
+
+===========           
+ Wednesday           (...)                      ~
+===========         (......)        \ /          
+                      (..)        ---O---          ~
+           ^                        / \              ~
+          / \                                       ~
+          |~|                                   ~ 
+          |U|                                         
+          |S|
+     *   /|A|\ 
+ *      /_|_|_\  *  *           *
+     *    /^\     *      *
+   * ** *** **** ** * 
+* *  ______________ *        *
+ * _/--------------\_   *
+ _/------------------\_
+ ^^^^^^^^^^^^^^^^^^^^^^
+
+Graphics card is listed here, I think:
+http://www.gigabyte.com/products/product-page.aspx?pid=4097#ov
+Model name:
+GV-N84S-512I (rev. 1.4) 
+Learning more about what GPU cores are. 
+
+Yesterday worked on finding the actual number of simultaneous
+threads. About 144 was the result. 
+Today need to figure out what it should be, then see if that 
+result is any better. 
+Determined (hopefully accurately) that the number of cores on 
+my device is 8. 
+This is based on this URL:
+http://www.gpuzoo.com/Compare/NVIDIA_GeForce_8400_GS_Rev_2__vs__GIGABYTE_GV-N84S-512I_%28rev._1.4%29/
+I have the one on the right because it has a PCI-Express 2.0, not 1.0 
+Assuming that each core processes one warp (32 threads), then there are 
+8 * 32 = 256 lines of simultaneous execution. 
+
+Still have a big problem: Simulator worst case is still too low. 
+Works nicely for Matrix Mult.
+Still decently off for Mandelbrot. 
+QUESTION: Why is the simulator in real programming so much slower
+than my model predicts it to be?
+Does it maybe have to do with the fact that some stuff is only done on
+the cpu? and thus not in parallel?
+Maybe it is because the parallelism level is dropping because of split
+data: The threads are going different directions and slowing down?
+Determine whether that is the case....
+
+Interesting and easily testable question: 
+What happens to the tested value of parallelality if every other
+thread executes a different instruction. 
+
+REALIZATION: My current method of testing parallelality has a freaking
+IF statement! That means that the scheduler (sheduler) has had to
+break up the program into separate warps of execution! I think! 
+
+ok, just compute an iSum!
+Retesting....
+ANOTHER REALIZATION: while it does have an if statement, all threads
+follow the if statement the same way. still retesting...
+
+Tomorrow:
+---------
+
+When that is done testing, copy it over and graph it, and run the 
+same parallel analysis program on it as the old one. 
+Hopefully it gives a significantly different value. If not, we are 
+confirming that the original value we got is pretty good. 
+Current theory as to why the actual simulator is so slow: There is
+some form of thread if stmt breaking that is causing warp divergence. 
+Check this theory tomorrow. 
+
+==========
+Thursday
+==========
+
+Realization: In order to test the absolute worst case for the GPU,
+shouldn't there be maximum warp divergence? When writing a naive
+implementation, this would theoretically be possible. In the best
+case, as tested with the iSum, the parallelality value is 165. 
+Maybe now we should test a maximum warp divergence. 
+
+Now check if there is warp divergence in the simulator code. 
+Code structure:
+__device__ inline void computeForce(float * positions, float * vels,
+				    bool * inBounds, int idx,
+				    int numParts) {
+  for(int i = 0; i < numParts; i++) {
+    if((i != idx) && (inBounds[i])) {
+      if(denom != 0) {
+      }
+    }
+  }  
+}
+
+__global__ void runframe(float * positions, float * vels,
+			 bool * inBounds, int numParts) {
+  if(idx < numParts) {
+    if(inBounds[idx]) {
+      computeForce(positions, vels, inBounds, idx, numParts);
+    }
+  }
+}
+
+It appears that there is in fact some serious warp divergence. Here's
+why: The first warp will execute the first 32 threads. However, the
+first thread has an if that makes sure that i != 0. But it does, so it
+skips that execution, so it waits while the others go in the loop,
+etc. Serious problem with respect to warp divergence! This would
+explain why the simulator is so slow with respect to max bounds!
+
+Next task--> Write code to test parallel execution with maximum thread
+divergence. See if this value is significantly small enough, like 60. 
+
+
+
+
+REALIZATION: The Mandelbrot set program has SERIOUS warp divergence!
+for(i = 0; i < max_depth; i++) {
+  if(ABS(real, imag) > EXCEED_VALUE)
+    break;
+I honestly don't have any good ideas on how to fix this. The
+efficiency problem here is that the program could potentially take
+advantage of the fact that certain pixels are easier to compute, and
+thus finish some computation early. The problem is that with the
+current if stmt and warp divergence, threads that finish early just
+sit around and wait, taking up SM warp space that could be spent on
+other pixels. That would be a difficult problem to solve. 

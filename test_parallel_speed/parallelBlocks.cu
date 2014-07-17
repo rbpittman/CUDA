@@ -28,7 +28,6 @@ __global__ void prime(int * sum) {
     }
     curr++;
   }
-  __syncthreads();
   sum[0] = total;
 }
 
