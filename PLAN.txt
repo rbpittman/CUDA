@@ -190,11 +190,30 @@ mathematics be applied to computational independence between the steps
 of any algorithm?
 }
 
+
+Week 8
+------
+1. Determine which term is off in the cpu-to-gpu time function in the
+   model for the Mandelbrot set. Something is making the lower bounds
+   to high. Is there a way to write a program that can be measured to
+   have a higher number for simultaneous execution? This would cause
+   the best case bounds for the Mandelbrot set to be lower. 
+2. Write up presentation. Once the Mandelbrot set bounds are
+   satisfactory, we're basically done testing a specific
+   implementation of the model. Finish improving model.
+3. Practice presentation. Continue work on model. 
+4. Write up how the model was tested, or some other part of the paper.
+5. How do we know that the model is good? Research in more models that
+   have been done: More sources for the lit review. Create result
+   graphs for the paper. 
+
+
+Week 9
+------
+1-5. Write silly silly "DEAL" paper, and write research paper. 
+
+--->OLDPLAN {
 Week 8
 ------
 i. Write research paper. (And the other paper?)
-
-Note: Whenever writing a benchmark algorithm for the 4 different
-program types, the order should be either [C++, CUDA, Python, PyCuda]
-or [C++, Python, CUDA, PyCUDA].  The first groups by language, while
-the second groups by sequential versus parallel implementation.
+}
