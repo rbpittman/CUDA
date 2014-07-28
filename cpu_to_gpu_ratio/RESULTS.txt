@@ -4,11 +4,50 @@ Equation for time to execute global memcpy based on the size of the array:
 (1.79931515731e-05 * x + 0.142268967261) / (100000 * sizeof(int))
 x is the number of bytes being copied. 
 in python: f = lambda x:(1.79931515731e-05 * x + 0.142268967261) / (100000 * 4)
+where x is the number of bytes to be copied. 
 
-cudaMalloc:
------------
+cudaMalloc (and cudaFree):
+--------------------------
 Equation for time to execute global memory allocation based on size of array:
 (1.16500018521e-07 * x + 1.61315917969) / (10000 * sizeof(int))
+where x is the number of bytes to be allocated. 
 
 cudaMemset:
 -----------
+Equation for time to execute global memset operation:
+(1.42890144161e-07 * x + 0.00142423354589) / (100 * sizeof(int))
+where x is the number of bytes to be set. 
+
+
+cuda device read and write times:
+---------------------------------
+global read time: 5.05806951878e-07 * x + 0.000185304812135
+global write time: 1.23599761537e-07 * x + 0.000355001545245
+register read/write: 7.26964799469e-08 * x + 0.000323712297927
+
+time for x global reads: 5.058069e-07 * x + 0.000185 - (7.269647e-08 * x + 0.000323)
+If ignoring the +c: 4.3311043e-07 * x
+
+time for x global writes: 5.0903281590099984e-08 * x + 3.1289247318e-05
+If ignoring the +c: 5.090328e-08 * x
+
+GPU thread performance: 7.27294491298e-08 * x^1.0 + 5.68434188608e-13
+CPU thread performance: 2.42778241955e-09 * x^1.0 + 0.000693448212701
+Ratio: 29.95715289151847
+
+
+Testing program written specifically for thread ratios
+======================================================
+Power for CPU: 1.0
+Power for GPU: 1.0
+CPU equation: 2.44142484007e-09 * x + 0.00050823295112
+GPU equation: 7.27271753931e-08 * x^1.0 + 6.89999995984e-05
+7.27271753931e-08 / 2.44142484007e-09 = 29.788824214230075
+
+Testing that program again with no optimizations
+================================================
+
+GPU equation: 2.29089778259e-07 * x + 2.59978361328e-05
+CPU equation: 2.43687736656e-09 * x + 2.68938259751e-05
+2.29089778259e-07 / 2.43687736656e-09 = 94.00956379778475 is the new
+worst case gpu-cpu ratio

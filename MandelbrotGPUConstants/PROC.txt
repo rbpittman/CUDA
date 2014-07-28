@@ -1,0 +1,19 @@
+Mandelbrot Parallelality
+========================
+0.01568 * x + 0.2343
+1.97543 * x for 1 thread. 
+1.97543 / 0.01568 = 125.98405612244899
+New parallelality coeff for Mand is: 125.98405612244899
+Not good. 
+
+Mandelbrot gpu-cpu thread ratio
+===============================
+0.106086 for 1 CPU thread.
+1.97543 / 0.106086 = 18.621024451859814
+Try with more accuracy...
+18.698687809546723
+
+Try getting the value for no optimizations.
+37.3784 / 1.90134 = 19.65897735281433
+No device optimizations:
+154.389 / 1.90134 = 81.20010098141312

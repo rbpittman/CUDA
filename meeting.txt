@@ -1,4 +1,4 @@
- Meeting:
+Meeting:
 ---------
 
 I forgot to __syncthreads() before doing the write. Now the simulation doesn't 
@@ -515,3 +515,178 @@ thus finish some computation early. The problem is that with the
 current if stmt and warp divergence, threads that finish early just
 sit around and wait, taking up SM warp space that could be spent on
 other pixels. That would be a difficult problem to solve. 
+
+This does affect the model because the CPU does not have to complete
+that loop. The model assumes that everything that the CPU does is
+parallelized by the number of threads running (or parallelality). In
+the current Mandelbrot, not everything is parallelized because some
+threads are sitting around waiting. It's at the border between the
+white and black sections that this is a problem. 
+
+Tomorrow:
+---------
+Look at the end of
+~/CUDA/test_parallel_speed/PROC.txt
+and see if the new parallelality value is good or not, and test the
+new model graphs. 
+
+======
+Friday
+======
+
+5 is the new value. This makes sense because of the huge inefficiency
+in the code, it should barely be able to do anything in parallel. 
+
+Matrix multiplication lower bounds is close to actual, indicating that
+my naive algorithm is very close to optimal when using global memory. 
+
+Mandelbrot set is still just below the lower bounds. The parallelality
+value would need to be 190. The major component of the Mandelbrot time
+in the model is the cpu to gpu conversion time. 
+
+Just to double check: Let's test the parallelality finder on single
+thread for the CPU, to see if the value for the CPU to GPU ratio is
+the same. 
+Found a very similar value of 30.5 or so. That's good. 
+
+TODO: Maybe figure out how to make the Mandelbrot set more accurate. 
+Current factor to make it on target is: 0.86
+TODO: Write paper. 
+
+Writing the introduction to the paper. 
+
+======
+Monday
+======
+
+The Mandelbrot set algorithm has that delay warp divergence, so it's
+doing some "computation" that it shouldn't have to based on the CPU
+had to do. This means that the CUDA data should definitely be above
+the lower bounds. 
+
+done TODO: Revise plan. 
+done TODO: Read book. 
+TODO: Figure out which term is off in the cpu_to_gpu function for the
+Mandelbrot set lower bounds. 
+TODO: Answer what to do with some extra time. 
+TODO: Answer paper questions. Is there a good handbook?
+
+
+Realized: Maybe I can just do the parallelize test on the Mandelbrot
+          set kernel.
+
+Testing... Nope, not simple to do, or maybe just not worth it. 
+
+IDEA, before pursuing the above test: Maybe the reason why the
+apparent Mandelbrot parallelality is so high is that it has tons of
+threads executing simulataneously, and so maybe Matrix Multiplication
+is a bit off too. 
+
+Test larger number of threads. Maybe it's the write at the end that is
+slowing down the parallelality, because all the threads might be
+waiting to do the write. 
+
+Tomorrow
+--------
+That benchmark at 
+~/CUDA/test_parallel_speed/benchParallelISumLarge.txt
+should be done. Run it through the Parallel equation guess py file,
+and find new parallelality value. 
+
+IDEA: Maybe it's a problem with the power curve on the CPU Mandelbrot
+set. Retest the powers on the CUDA and C++ curves. 
+Test: Maybe the reason the power on the Mandelbrot is 0.93 is because
+of the higher parallelality on larger numbers of threads.
+
+Tested super large number of threads, only got 167. Still not good. 
+Maybe find out where CUDA kernel parameters are stored in device mem. 
+Maybe I could test it on a much larger image space and see a more
+detailed picture of the curve. 
+
+Max number of pixels is 2**(16) * 512
+
+REALIZATION: Kind of figured out why the power on the Mandelbrot 
+set computeBestCurve.py program is 0.93: It's because the larger x
+values are further apart, and thus subject to more error towards the
+right side of the graph. 
+
+Result: Tested larger number of threads for benchmarking the
+Mandelbrot set: New equation power is 0.98: Much better, I wonder what
+the model predicts for the best case for that...
+drum roll please...
+dadadadadadadadadadadadadadadadadadadadadadadada.................
+woops, forgot that the depth is 500 for the current cpu test, need 
+to increase the depth for the CPU and do a long run. 
+
+Wait till C++ large is done running for depth of 1000 so we can see
+whether the new larger CUDA data set is better. 
+In the meantime...
+Found a good paper from 1989 that describes the PRAM model. 
+Done da bench.
+repeat drumroll please...
+dadadadadadadadadadadadadadadadadadadadadadadada.................
+Dangit, exactly the same amount above the actual data. 
+But wait, is it the exact same amount???
+Dude, it's 0.83 for the large data set, and 0.86 for the initial
+smaller data set. That's pretty close. 
+
+Tomorrow
+--------
+Let's look over the code and see if something in there would 
+explain why the CPU is going slower than it should be. 
+Maybe figure out how to explain the problem to scotty or dr Shende. 
+
+
+Meeting
+=======
+2 possibilities at this point:
+ 1. The CPU is doing something that at 7.95 seconds execution time is causing it
+    to take an extra 1.13 seconds to do than it should. 
+ 2. The GPU and CPU thread ratio is slower than it 
+
+TEST: Test to see what value the gpu-cpu thread ratio would have to be. 
+Guess what... You multiply 0.86 by 30 to get about 26 for the required
+ gpu-cpu ratio, dat makes sense, but it's annoying that that value keeps
+ coming up. 
+
+Maybe I need to take the clock speed ratios...
+
+
+Talked to professor scott:
+Check to see if you can turn off nvcc optimizzzzzation. 
+Can try moving the break. 
+
+TESTING: Running a test of gpuMand.cu with all optimization flags off:
+         nvcc -O0 -Xopencc -O0 -Xptxas -O0 -c gpuMand.cu
+    Going to see if this new curve is above the worst case bounds. 
+    If this works, I might need to retest all of the simulator and 
+    matrix multiplication CUDA code. 
+
+Hmmm pretty meh results.
+
+Tomorrow
+--------
+Analyze the meh results. 
+The problem with that theory is that I am basically testing the GPU
+when it has those optimizations in the for loop. 
+New idea: test parallelality with optimizations off. 
+
+WELL, THERE'S ONLY ONE THING LEFT TO DO.....
+TEST: Parallelality value for the actual Mandelbrot code, and 
+the gpu-cpu thread speed ratio for the Mandelbrot code. 
+
+SWEET: Found a new best case for thread ratio: 18.5. 
+This is why the Mandelbrot set is so much faster than my model predicts. 
+19.6 is for no optimizations. 
+Maybe we can optimize the CPU to get a better time for the gpu-cpu ratio.
+
+Turn on max cpu optimization with loop unrolling. 
+Testing new thread speed execution ratio. 
+
+Tomorrow
+--------
+Find out the slopes of the lines generated from the files 
+~/CUDA/cpu_to_gpu_ratio/timeGPUThreadWithCPUOpts.txt
+and
+~/CUDA/cpu_to_gpu_ratio/timeCPUThreadWithCPUOpts.txt
+Then get the ratio between them and see if it's closer to 30. 
